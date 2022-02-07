@@ -1,11 +1,11 @@
 html {
-  margin-top: 29px;
   background: #FEC3D0;
   height: 100%;
   position: relative;
   text-align: center;
 }
 body {
+  margin-top: 80px;
   background: #FEC3D0;
   font-family: Displace, 'Josefin Sans', sans-serif;
 }
@@ -21,6 +21,7 @@ body {
 .Hero {
   background-color: #FEC3D0;
   padding: 0 15%;
+  padding-bottom: 3rem;
 }
 
 .About {
@@ -33,7 +34,7 @@ body {
 }
 
 .Booking {
-  background-color: white;
+  background-color: #90D0DA;
   padding: 2.5% 15%;
 }
 

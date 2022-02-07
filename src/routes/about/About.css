@@ -1,9 +1,14 @@
 .About .bioPic {
+  position: static;
   width: 600px;
   height: 500px;
   object-fit: cover;
   object-position: 80% 5;
+}
 
+.About h2 {
+  color: #DC5C62;
+  text-transform: uppercase;
 }
 
 .About .blurb {

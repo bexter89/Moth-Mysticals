@@ -20,14 +20,14 @@ const About = () => {
     <>
       <a name="about"/>
       <Col md="6">
-        <div className="blurb">
+        <div className="blurb order-1 order-md-2">
+        <h2>About Me</h2>
             {aboutText}
         </div>
       </Col>
       <Col md="6">
         <img src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
-
     </>
   )
 };

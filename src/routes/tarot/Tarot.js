@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { DisplayContext } from '../../components/DisplayContext';
 import Card from 'react-bootstrap/Card'
+import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
@@ -67,23 +68,29 @@ const Tarot = () => {
       I use tarot for self-reflection, evolution and empowerment. I, nor the cards, can or will predict your future. Instead, I will offer insight into the present. The clearer and more honest we are with our present selves, the clearer our desires and path for the future can become. You can expect a warm and compassionate space to be witnessed, receive guidance, validation, affirmation(s) and general messages in alignment with your evolution at this time. My hope is that you leave your session feeling empowered and spacious in the here and now.
       </Col>
     </Row>
-
-    <Row xs={1} md={3} lg={4} className="g-4">
+    <Row>
+      <Col>
+    <Carousel>
     {tarotEthics.map((point, idx) => (
-    <div key={point.num}>
-    <Col>
-      <Card style={{ width: '15rem' }}>
-        <Card.Img variant="top" src={point.image} />
+    <Carousel.Item key={point.num}>
+    <img
+      src={point.image}
+    />
+      <Card bg="info">
         <Card.Body>
-          <Card.Title>{point.num}</Card.Title>
+        <Card.Title>{point.num}</Card.Title>
           <Card.Text>
           {point.text}
           </Card.Text>
+          <Card.Text>
+          <br/><br/>
+          </Card.Text>
         </Card.Body>
       </Card>
-    </Col>
-    </div>
+    </Carousel.Item>
     ))}
+    </Carousel>
+      </Col>
     </Row>
   </>
   );

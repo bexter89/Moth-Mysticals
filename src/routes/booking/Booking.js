@@ -19,15 +19,15 @@ const Booking = () => {
   return (
     <>
       <a name="contact" />
-      <h2>Get In Touch</h2>
       <Col md="6">
+      <h2>Get In Touch</h2>
         <ContactForm />
       </Col>
       <Col md="6">
         <Image
           fluid
           src={Gab}
-          alt="Gabee is laying on her back with cards surrouning her"
+          alt="An overhead view of Gabee laying on her back, wearing a black and yellow banana-print  jumpsuit with tarot cards surrounding her."
         />
       </Col>
     </>
