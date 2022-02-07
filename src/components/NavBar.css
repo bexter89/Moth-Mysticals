@@ -1,0 +1,50 @@
+
+#mainNavbar {
+  font-size: 1.25rem;
+  font-weight: 100;
+  background-color: #CC565A;
+  padding: 0px;
+  border-bottom: 1px rgba(0, 0, 0, 0.07) solid;
+  z-index: 99;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+#mainNavbar .nav-link {
+  color: white;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #E8BE43;
+  transition: 0.3s;
+}
+
+#mainNavbar .navbar-brand {
+  color: #E8BE43;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/**
+*  Responsive Styles
+*/
+
+
+@media (max-width: 727px) {
+  #mainNavbar .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 575px) {
+  #mainNavbar .navbar-brand {
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width: 375px) {
+  #mainNavbar .navbar-brand {
+    font-size: 1em;
+  }
+}
+

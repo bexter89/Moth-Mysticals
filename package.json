@@ -1,0 +1,39 @@
+{
+  "name": "moth-mysticals",
+  "version": "1.0.0",
+  "mode": "development",
+  "description": "the homepage of moth mysticals",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "keywords": [
+    "tarot",
+    "moth",
+    "mysticals",
+    "woman-owned",
+    "business"
+  ],
+  "author": "rebekah cruz",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@svgr/webpack": "^6.2.1",
+    "babel-loader": "^8.2.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
