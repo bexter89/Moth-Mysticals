@@ -40,3 +40,23 @@
   padding-top: .125em;
   line-height: 1.25;
 }
+
+@media (max-width: 479px) {
+  .heroImage {
+    height: 60vh;
+    width: 100vh;
+    padding: 0;
+  }
+  .Overlay h1 {
+    font-size: 2em;
+    background-color: none;
+    padding: 0 .5em;
+    text-shadow: 1px 1px 0px rgba(204,85,89,0.5);
+  }
+  #hero-Text {
+    font-size: 1.25em;
+    padding: 0 .2em;
+    padding-top: .125em;
+    line-height: 1.25;
+  }
+}

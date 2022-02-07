@@ -12,7 +12,7 @@ import vase from "../../../assets/imgs/MM_VASE_WEB.jpg"
 import crow from "../../../assets/imgs/MM_RAVEN_WEB.jpg"
 import styled, { css } from 'styled-components';
 
-const width = '75vh', height='25vh';
+const width = '50vh', height='25vh';
 const Container = styled.div`
   border: none;
   border-radius: 5px;
@@ -22,7 +22,7 @@ const Container = styled.div`
   background-color: #F2BFC8;;
 `;
 const Children  = styled.div`
-  width: ${width};
+  width: ${width - 5};
   position: relative;
   height: ${height};
 `;

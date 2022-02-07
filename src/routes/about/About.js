@@ -30,7 +30,7 @@ const About = () => {
         </Fade>
       </Col>
       <Col>
-        <img src={bioPic} alt="About Pic" className="bioPic" />
+        <Image fluid src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
     </>
   )

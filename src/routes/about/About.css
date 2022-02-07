@@ -25,7 +25,15 @@
 }
 
 @media (max-width: 479px) {
-  .aboutPic {
-    border-radius: 2px;
+  .About .bioPic {
+    max-width: 300px;
+  }
+  .About .blurb {
+    position: static;
+    color: black;
+    background-color: white;
+    padding: 1em;
+    font-weight: 100;
+    line-height: 1.25;
   }
 }

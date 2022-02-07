@@ -30,16 +30,16 @@ const Home = () => {
     </Helmet>
     <a className="anchor" name="home" id="top"></a>
     <Pulse>
-      <Row className="Hero align-items-center justify-content-md-center">
+      <Row className="Hero align-items-center justify-content-center">
         <Hero />
       </Row>
-      <Row className="About align-items-center justify-content-md-center">
+      <Row className="About align-items-center justify-content-center">
         <About />
       </Row>
-      <Row className="Tarot align-items-center justify-content-md-center">
+      <Row className="Tarot align-items-center justify-content-center">
         <Tarot />
       </Row>
-      <Row className="Booking align-items-center justify-content-md-center">
+      <Row className="Booking align-items-center justify-content-center">
         <Booking/>
       </Row>
     </Pulse>

@@ -20,8 +20,20 @@ const Tarot = () => {
   return (
     <>
       <a name="tarot" />
-        <h2>Tarot Ethics</h2>
-      <Row>
+        <h2 className="Tarot">Tarot Ethics</h2>
+        <TarotCarousel />
+
+      <Row  md={4} className="justify-content-center">
+        <Flip left cascade>
+        {images.map(image => (
+          <Col className="Tarot-Images d-xs-none d-sm-none d-md-block" key={image.name}>
+              <Image src={image.src} className="tarotImage"/>
+          </Col>
+        )
+        )}
+        </Flip>
+        </Row>
+        <Row>
           <p className="Tarot-Summary">
           I use tarot for self-reflection, evolution and empowerment. I,
           nor the cards, can or will predict your future. Instead, I will
@@ -34,17 +46,7 @@ const Tarot = () => {
           session feeling empowered and spacious in the here and now.
           </p>
       </Row>
-      <Row  md={4} className="justify-content-center">
-        <Flip left cascade>
-        {images.map(image => (
-          <Col className="d-sm-none d-md-block" key={image.name}>
-              <Image src={image.src} className="tarotImage"/>
-          </Col>
-        )
-        )}
-        </Flip>
-        </Row>
-      <TarotCarousel />
+
     </>
   );
 };

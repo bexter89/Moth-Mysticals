@@ -10,19 +10,6 @@ body {
   font-family: Displace, 'Josefin Sans', sans-serif;
 }
 
-a.anchor {
-  display: block;
-  position: relative;
-  top: -50px;
-}
-
-.App {
-  background: #FEC3D0;
-  padding: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
 .Hero {
   padding: 0 15%;
   padding-bottom: 3rem;
@@ -44,6 +31,19 @@ a.anchor {
 }
 
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
+.App {
+  background: #FEC3D0;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 h1, h2, h3, h4 {
   font-family: PaloSanto, 'Alike Angular', Times, serif;
   text-transform: uppercase;
@@ -59,32 +59,53 @@ strong {
 *  Responsive Styles
 */
 @media (min-width: 1800px) {
-  ul {
-    margin: 0;
-    margin-bottom: 1em;
+  .Hero {
+    padding: 0 15%;
+    padding-bottom: 3rem;
+  }
+
+  .About {
+    background-color: #F0C33B;
+    padding: 2.5% 25%;
+  }
+
+  .Tarot {
+    background-color: #DC5C62;
+    padding: 2.5% 20%;
+  }
+
+  .Booking {
+    background-color: #90D0DA;
+    padding: 2.5% 20%;
   }
 }
 
-
-@media (max-width: 1250px) {
-  ul {
-    margin: 0;
-    margin-bottom: 1em;
-  }
-}
-
-
-@media (max-width: 727px) {
-  .blurb {
-    padding: 1em;
-    font-size: 1em;
-  }
-}
 
 @media (max-width: 575px) {
+
   body {
     margin: 0;
     padding: 0;
+  }
+  .Hero {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .About {
+    background-color: #F0C33B;
+    padding: 3% 8%;
+  }
+
+  .Tarot {
+    background-color: #DC5C62;
+    padding: 2.5% 5%;
+  }
+
+  .Booking {
+    background-color: #90D0DA;
+    padding: 5% 5%;
+    padding-bottom: 2rem;
   }
 }
 
