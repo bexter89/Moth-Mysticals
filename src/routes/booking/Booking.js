@@ -5,6 +5,7 @@ import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button'
 import ContactForm from './ContactForm'
+import Jump from 'react-reveal/Jump';
 import { DisplayContext } from "../../components/DisplayContext";
 import "./booking.css";
 import Gab from "../../../assets/imgs/Gabee_Cards_Spread.jpg";
@@ -19,13 +20,16 @@ const Booking = () => {
   return (
     <>
       <a name="contact" />
-      <Col md="6">
+      <Col md="5" className="order-1 order-md-2">
+      <Jump>
       <h2>Get In Touch</h2>
+      </Jump>
         <ContactForm />
       </Col>
-      <Col md="6">
+      <Col md="7">
         <Image
           fluid
+          thumbnail
           src={Gab}
           alt="An overhead view of Gabee laying on her back, wearing a black and yellow banana-print  jumpsuit with tarot cards surrounding her."
         />

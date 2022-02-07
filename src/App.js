@@ -10,7 +10,6 @@ import Welcome from "../src/components/Welcome"
 import Home from './routes/home/Home'
 import About from "./routes/about/About";
 import Tarot from "./routes/tarot/Tarot";
-import TarotEthics from "./routes/tarot/TarotEthics";
 import Decks from "./routes/tarot/Decks";
 import Booking from "./routes/booking/Booking";
 import Shop from "./routes/shop/Shop";
@@ -21,7 +20,6 @@ const App = () => {
   const { displayNavState, displayTitleState } = useContext(DisplayContext);
   const [displayNav, setDisplayNav] = displayNavState;
   const [title, setTitle] = displayTitleState;
-
   return (
     <>
     <div className="App">

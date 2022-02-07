@@ -5,21 +5,25 @@ html {
   text-align: center;
 }
 body {
-  margin-top: 80px;
+  margin-top: 70px;
   background: #FEC3D0;
   font-family: Displace, 'Josefin Sans', sans-serif;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
 .App {
   background: #FEC3D0;
-  padding: 0px;
   padding: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .Hero {
-  background-color: #FEC3D0;
   padding: 0 15%;
   padding-bottom: 3rem;
 }
@@ -28,6 +32,7 @@ body {
   background-color: #F0C33B;
   padding: 2.5% 15%;
 }
+
 .Tarot {
   background-color: #DC5C62;
   padding: 2.5% 15%;
@@ -39,62 +44,32 @@ body {
 }
 
 
-.blurb span {
-  color: #2291A6;
-}
-
-a {
-  color: #CD5659;
-}
-
-hr {
-  border-top: .125em dashed #90D0DA;
-}
-
 h1, h2, h3, h4 {
   font-family: PaloSanto, 'Alike Angular', Times, serif;
-  color: #CC5559;
-}
-
-#headingGroup2 h2 {
-  color: white;
-}
-
-section h2 {
-  color: #CC565A;
   text-transform: uppercase;
-  background-color: #E8BE43;
-  border-radius: 5px;
-  padding: .25em 0px;
-  box-shadow: none;
+  color: #CC5559;
+  text-shadow: 1px 1px 0px rgba(204,85,89,0.2)
 }
 
 strong {
   color: #CC565A;
 }
 
-.imageCard {
-  max-height: 650px;
-}
-
 /**
 *  Responsive Styles
 */
-
-
-@media (max-width: 1250px) {
-  .imageCard {
-    margin: 1em 0;
-  }
-  section h3 {
-    margin: .5em 1em;
-  }
+@media (min-width: 1800px) {
   ul {
     margin: 0;
     margin-bottom: 1em;
   }
-  ul > ul {
-    box-shadow: none;
+}
+
+
+@media (max-width: 1250px) {
+  ul {
+    margin: 0;
+    margin-bottom: 1em;
   }
 }
 
@@ -104,23 +79,12 @@ strong {
     padding: 1em;
     font-size: 1em;
   }
-
-  .imageCard {
-    margin-top: 2em;
-  }
-  section h3 {
-    border-radius: 5px;
-    margin: .25em 0px .5em 0px;
-    padding: 0px;
-  }
 }
+
 @media (max-width: 575px) {
   body {
     margin: 0;
     padding: 0;
-  }
-  .blurb {
-    border-radius: 0;
   }
 }
 

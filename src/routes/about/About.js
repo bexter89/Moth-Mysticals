@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
+import Pulse from 'react-reveal/Pulse';
+import Fade from 'react-reveal/Fade';
 import { DisplayContext } from '../../components/DisplayContext';
 import './About.css'
 import bioPic from '../../../assets/imgs/Gabee_About.jpg'
@@ -19,13 +21,15 @@ const About = () => {
   return (
     <>
       <a name="about"/>
-      <Col md="6">
-        <div className="blurb order-1 order-md-2">
-        <h2>About Me</h2>
+      <Col>
+      <Fade left>
+        <div className="blurb">
+          <h2>About Me</h2>
             {aboutText}
         </div>
+        </Fade>
       </Col>
-      <Col md="6">
+      <Col>
         <img src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
     </>

@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect id="mainNavbar" fixed="top" expand="lg">
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand href="#home">
           <img
             alt="MOTH MYSTICALS LOGO"
             src={moth}
