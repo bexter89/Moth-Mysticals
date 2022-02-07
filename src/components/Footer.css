@@ -1,0 +1,19 @@
+footer {
+  color: #CC5559;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FEC3D0;
+  margin-top: auto;
+  flex: 0 0 50px;
+  font-size: .75em;
+}
+
+footer a {
+  color: #E98A9C;
+}
+
+footer a:hover {
+  color: #173940
+}

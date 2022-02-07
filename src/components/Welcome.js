@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
 import { DisplayContext } from '../components/DisplayContext';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import raven from '../../assets/imgs/raven_nobackground.svg';
 
 
@@ -17,17 +20,17 @@ const Welcome = () => {
 
   return (
   <>
-    <div className="row align-items-center justify-content-center">
-      <div className="col text-center" >
-        <img src={raven} alt="moth mysticals raven logo" className="splashImg fluid" onClick={handleClick}/>
+    <Row className="align-items-center justify-content-center">
+      <Col className="text-center" >
+        <Image src={raven} alt="moth mysticals raven logo" className="splashImg fluid" onClick={handleClick}/>
         <br/>
-      </div>
-    </div>
-    <div className="row align-items-center justify-content-center">
-      <div className="col text-center splashTxt" onClick={handleClick} >
+      </Col>
+    </Row>
+    <Row className="align-items-center justify-content-center">
+      <Col className="text-center splashTxt" onClick={handleClick} >
        <h1>CLICK TO ENTER...</h1>
-      </div>
-    </div>
+      </Col>
+    </Row>
    </>
   )
 };

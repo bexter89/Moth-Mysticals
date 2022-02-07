@@ -1,45 +1,46 @@
 import React from 'react';
-import moth from  '../../assets/imgs/moth_logo.png'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar';
+import moth from '../../assets/imgs/moth_logo.png'
 import './NavBar.css'
 
-const NavBar = () => {
-
+function NavBar() {
   return (
-    <>
-    <nav className="navbar fixed-top navbar-expand-md navbar-dark" id="mainNavbar">
-      <div className="container-fluid">
-      <a className="navbar-brand" href="#brand">
-        <img
-          alt=""
-          src={moth}
-          width="40"
-          height="40"
-          className="d-inline-block align-top"
-        />{' '}
-          MOTH MYSTICALS
-          </a>
-        </div>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarText">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="#about">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#tarot">Tarot</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer">Shop</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#contact">Contact</a>
-        </li>
-        </ul>
-    </div>
-        </nav>
-  </>
+    <Navbar collapseOnSelect id="mainNavbar" fixed="top" expand="lg">
+        <Container>
+          <Navbar.Brand>
+          <img
+            alt="MOTH MYSTICALS LOGO"
+            src={moth}
+            width="40"
+            height="40"
+            className="d-inline-block align-top"
+          />{' '}
+            MOTH MYSTICALS
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav>
+            <Nav.Link eventKey={1} href="#about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="#tarot">
+              TAROT
+            </Nav.Link>
+            <Nav.Link eventKey={3} href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer">
+              SHOP
+            </Nav.Link>
+            <Nav.Link eventKey={4} href="#contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 

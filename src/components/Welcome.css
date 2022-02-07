@@ -1,0 +1,12 @@
+.splashImg {
+  margin-top: 100px;
+  max-height: 1000px;
+}
+
+.splashImg:hover {
+  cursor: pointer;
+}
+
+.splashTxt:hover {
+  cursor: pointer;
+}

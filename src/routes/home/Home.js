@@ -1,9 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { DisplayContext } from '../../components/DisplayContext';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import About from '../about/About';
 import Booking from '../booking/Booking';
-import TopBanner from '../top-banner/TopBanner'
+import Hero from '../hero/Hero'
 import Tarot from '../tarot/Tarot'
 import Shop from '../shop/Shop'
 import moth from '../../../assets/imgs/moth_logo.png';
@@ -25,23 +28,18 @@ const Home = () => {
           content="Moth Mysticals Home"
         />
     </Helmet>
-    <div className="container fluid align-items-center justify-content-center">
-    <div className="row align-items-center justify-content-center">
-        <TopBanner />
-      </div>
-      <div className="row align-items-center justify-content-center">
+      <Row className="Hero align-items-center justify-content-center">
+        <Hero />
+      </Row>
+      <Row className="About align-items-center justify-content-center">
         <About />
-      </div>
-      <div className="row align-items-center justify-content-center">
+      </Row>
+      <Row className="Tarot align-items-center justify-content-center">
         <Tarot />
-      </div>
-      <div className="row align-items-center justify-content-center">
-        <Shop />
-      </div>
-      <div className="row align-items-center justify-content-center">
+      </Row>
+      <Row className="Booking align-items-center justify-content-center">
         <Booking/>
-      </div>
-    </div>
+      </Row>
   </>
   )
 };

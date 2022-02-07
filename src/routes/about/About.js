@@ -1,5 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
-import { Helmet } from "react-helmet";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col';
 import { DisplayContext } from '../../components/DisplayContext';
 import './About.css'
 import bioPic from '../../../assets/imgs/Gabee_About.jpg'
@@ -15,22 +18,16 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>About - Moth Mysticals</title>
-        <meta
-          name="description"
-          content="About Moth Mysticals"
-        />
-      </Helmet>
       <a name="about"/>
-      <div className="col-md-6">
-        <img src={bioPic} alt="About Pic" className="bioPic" />
-      </div>
-      <div className="col-md-6">
+      <Col md="6">
         <div className="blurb">
             {aboutText}
         </div>
-      </div>
+      </Col>
+      <Col md="6">
+        <img src={bioPic} alt="About Pic" className="bioPic" />
+      </Col>
+
     </>
   )
 };

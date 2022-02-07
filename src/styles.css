@@ -1,59 +1,45 @@
 html {
   margin-top: 29px;
+  background: #FEC3D0;
   height: 100%;
   position: relative;
   text-align: center;
 }
 body {
-  background: #F2BFC8 fixed;
-  background-repeat:no-repeat, repeat, repeat;
+  background: #FEC3D0;
   font-family: Displace, 'Josefin Sans', sans-serif;
+}
+
+.App {
+  background: #FEC3D0;
+  padding: 0px;
   padding: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-#root {
-  padding: 0px;
-  margin-bottom: 60px;
-  padding-bottom: 3rem;
+.Hero {
+  background-color: #FEC3D0;
+  padding: 0 15%;
 }
 
-.main {
-  padding-bottom: 2.5rem;
+.About {
+  background-color: #F0C33B;
+  padding: 2.5% 15%;
+}
+.Tarot {
+  background-color: #DC5C62;
+  padding: 2.5% 15%;
 }
 
-.blurb {
-  color: white;
-  background-color: #216472;
-  padding: 1em;
-  border-radius: 1.5em;
-  font-weight: 100;
-  line-height: 1.25;
+.Booking {
+  background-color: white;
+  padding: 2.5% 15%;
 }
+
 
 .blurb span {
   color: #2291A6;
-}
-
-footer {
-  color: #CC5559;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: transparent;
-  margin-top: auto;
-  flex: 0 0 50px;
-  font-size: .75em;
-}
-
-footer a {
-  color: #E98A9C;
-}
-
-footer a:hover {
-  color: #173940
 }
 
 a {
@@ -90,41 +76,14 @@ strong {
   max-height: 650px;
 }
 
-.splashImg {
-  margin-top: 100px;
-  max-height: 1000px;
-}
-
-.splashImg:hover {
-  cursor: pointer;
-}
-
-.splashTxt:hover {
-  cursor: pointer;
-}
-
-
-#headingGroup2 span {
-  color: #E8BE43;
-  font-family: Displace, 'Josefin Sans', sans-serif;
-}
-
 /**
 *  Responsive Styles
 */
 
-@media (max-width: 1450px) {
-  #headingGroup h1 {
-    font-size: 2.6em;
-  }
-}
 
 @media (max-width: 1250px) {
   .imageCard {
     margin: 1em 0;
-  }
-  #headingGroup h1 {
-    font-size: 2.3em;
   }
   section h3 {
     margin: .5em 1em;
@@ -138,37 +97,13 @@ strong {
   }
 }
 
-@media (max-width: 1022px) {
-  #root {
-    padding: 0px;
-    padding-bottom: 2.5em;
-    margin: 0px;
-    margin-top: 35px;
-  }
-  #headingGroup h1 {
-    font-size: 2.2em;
-  }
-  .imageCard {
-    max-width: 75%
-  }
-}
 
 @media (max-width: 727px) {
   .blurb {
     padding: 1em;
     font-size: 1em;
   }
-  #root {
-    padding: 0px;
-    padding-bottom: 2.5em;
-    margin: 0px;
-    margin-top: 35px;
-  }
 
-  #mainNavbar .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
   .imageCard {
     margin-top: 2em;
   }
@@ -186,15 +121,6 @@ strong {
   .blurb {
     border-radius: 0;
   }
-  #mainNavbar .navbar-brand {
-    font-size: 1em;
-  }
 }
 
-
-@media (max-width: 375px) {
-  #mainNavbar .navbar-brand {
-    font-size: 1em;
-  }
-}
 
