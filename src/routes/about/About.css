@@ -26,14 +26,16 @@
 
 @media (max-width: 479px) {
   .About .bioPic {
-    max-width: 300px;
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: 70%;
+  }
+  .About h2 {
+    font-size: 2em;
   }
   .About .blurb {
+    left: 0;
     position: static;
-    color: black;
-    background-color: white;
-    padding: 1em;
-    font-weight: 100;
-    line-height: 1.25;
   }
 }

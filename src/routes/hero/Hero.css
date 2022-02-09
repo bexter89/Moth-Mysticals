@@ -1,6 +1,6 @@
 .heroImage {
   height: 60vh;
-  width: 100vh;
+  width: 100vw;
 	position: relative;
   background-size: cover;
 	background-position: 50% 50%;
@@ -43,8 +43,9 @@
 
 @media (max-width: 479px) {
   .heroImage {
-    height: 60vh;
-    width: 100vh;
+    height: 50vh;
+    width: 80vw;
+    background-position: 70% 50%;
     padding: 0;
   }
   .Overlay h1 {

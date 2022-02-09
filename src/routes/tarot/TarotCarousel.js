@@ -12,8 +12,8 @@ import vase from "../../../assets/imgs/MM_VASE_WEB.jpg"
 import crow from "../../../assets/imgs/MM_RAVEN_WEB.jpg"
 import styled, { css } from 'styled-components';
 
-const width = '50vh', height='25vh';
-const Container = styled.div`
+const width = '60vw', height='20vh';
+const CarouselContainer = styled.div`
   border: none;
   border-radius: 5px;
   position: relative;
@@ -21,8 +21,8 @@ const Container = styled.div`
   width: ${width};
   background-color: #F2BFC8;;
 `;
-const Children  = styled.div`
-  width: ${width - 5};
+const CarouselChildren  = styled.div`
+  width: ${width};
   position: relative;
   height: ${height};
 `;
@@ -52,20 +52,20 @@ const Dots = styled.span`
   z-index: 100;
 `;
 const CarouselUI = ({ position, total, handleClick, children }) => (
-  <Container>
-    <Children>
+  <CarouselContainer className="CarouselContainer">
+    <CarouselChildren className="CarouselChildren">
       {children}
       <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
       <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
-    </Children>
-    <Dots>
+    </CarouselChildren>
+    <Dots className="Dots">
       {Array(...Array(total)).map( (val, index) =>
         <Dot key={index} onClick={handleClick} data-position={index}>
           {index === position ? '● ' : '○ ' }
         </Dot>
       )}
     </Dots>
-  </Container>
+  </CarouselContainer>
 );
 
 const Carousel = makeCarousel(CarouselUI);
@@ -98,12 +98,12 @@ export default function TarotCarousel () {
   },
   {
     num:"VI.",
-    text: "I am not a lawyer, financial advisor, therapist or a medical doctor. Please direct these types of inquiries accordingly",
+    text: "I am not a lawyer, financial advisor, therapist or a medical doctor. Please direct these types of inquiries accordingly.",
     image: lungs,
   },
   {
     num:"VII.",
-    text: "Please note that by purchasing any service, you hereby agree that you’ve read and understand these guidelines above.",
+    text: "Please note that by purchasing any service, you hereby agree that you’ve read and understand these aforementioned guidelines.",
     image: vase,
   }]
 

@@ -21,7 +21,7 @@ const About = () => {
   return (
     <>
       <a name="about"/>
-      <Col>
+      <Col xs={12} md={6}>
       <Fade left>
         <div className="blurb">
           <h2>About Me</h2>
@@ -29,7 +29,7 @@ const About = () => {
         </div>
         </Fade>
       </Col>
-      <Col>
+      <Col xs={12} md={6}>
         <Image fluid src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
     </>

@@ -20,10 +20,10 @@ const Booking = () => {
   return (
     <>
       <a name="contact" />
-      <Col md="5" className="order-1 order-md-2">
       <Jump>
       <h2>Get In Touch</h2>
       </Jump>
+      <Col md="5" className="order-1 order-md-2">
         <ContactForm />
       </Col>
       <Col md="7">

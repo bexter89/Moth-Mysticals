@@ -15,7 +15,6 @@
   font-weight: 100;
   line-height: 1.25;
   box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.5);
-
 }
 
 .EthicsSlideshow {
@@ -32,22 +31,43 @@
   text-shadow: 1px 1px 0px rgba(41, 16, 17, 0.2)
 }
 
+
+@media screen and (max-width: 1000px) {
+  .EthicsSlideshow {
+    font-size: 1em;
+    margin: 1.5em 2.25em;
+    height: 45vh;
+  }
+  .CarouselContainer {
+    margin-bottom: 1em;
+    height: 50vh;
+    width: 100vw;
+  }
+  .CarouselChildren {
+    position: static !important;
+    height: 45vh;
+  }
+}
+
+
+
 @media screen and (max-width: 560px) {
   .Tarot h2 {
-    color: #F0C33B;
     font-size: 2.5rem;
+    padding-bottom: .5em;
   }
   .Tarot {
-    padding: 0;
-    margin: 0;
+    padding: .5em .5em;
     padding-bottom: 2em;
   }
   .Tarot-Images {
     display: none;
   }
-  .EthicsSlideshow {
-    font-size: 1em;
-    margin: 2.5em 1.25em;
-    font-size: 1rem;
+  .Tarot-Summary {
+    margin-top: 1em;
+  }
+  .CarouselChildren {
+    position: static !important;
+    width: 95vw;
   }
 }
