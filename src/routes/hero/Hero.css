@@ -1,11 +1,12 @@
-.heroImage {
+.Hero {
+  width: 100%;
+}
+
+.header-background {
+	position: relative;
   height: 60vh;
   width: 100vw;
-	position: relative;
-  background-size: cover;
-	background-position: 50% 50%;
 	background-image: url("https://i.ibb.co/LRB1VSK/Artist-Favorites110-websize.png");
-  background-attachment: scroll;
 }
 
 .Overlay {

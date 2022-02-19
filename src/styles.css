@@ -95,17 +95,19 @@ strong {
   .About {
     background-color: #F0C33B;
     padding: 3% 8%;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
   }
 
   .Tarot {
     background-color: #DC5C62;
-    padding:.3em;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
   }
 
   .Booking {
     background-color: #90D0DA;
-    padding: 5% 5%;
-    padding-bottom: 2rem;
+    padding: 3em 0;
   }
 }
 

@@ -10,7 +10,7 @@ import Tarot from '../tarot/Tarot'
 import Shop from '../shop/Shop'
 import moth from '../../../assets/imgs/moth_logo.png';
 import Pulse from 'react-reveal/Pulse';
-
+import HeroImage from '../hero/HeroImage'
 
 const Home = () => {
   const { displayNavState } = useContext(DisplayContext);
