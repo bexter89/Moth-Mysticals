@@ -4,7 +4,8 @@
 
 .header-background {
 	position: relative;
-  height: 60vh;
+  background-color: #FEC3D0;
+  height: 100vh;
   width: 100vw;
 	background-image: url("https://i.ibb.co/LRB1VSK/Artist-Favorites110-websize.png");
 }
@@ -15,7 +16,6 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.35);
   color: white;
   display: flex;
   align-items: center;
@@ -34,6 +34,8 @@
 
 #hero-Text {
   background-color: #F2BFC8;
+  font-family: Displace, 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
   text-shadow: 1px 1px 0px rgba(204,85,89,0.2);
   color: #11454F;
   font-size: 3em;

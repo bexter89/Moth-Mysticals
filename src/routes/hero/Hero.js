@@ -26,10 +26,10 @@ export default function Hero () {
     >
       <section
         className='Overlay'
-        style={{ bottom: offset / 2 }}
+        style={{ bottom: offset / 1.5 }}
       >
         <h1>MOTH MYSTICALS</h1>
-        <h3  id="hero-Text">Tarot. JOYeria. Sustainable Art.</h3>
+        <h3  id="hero-Text">Tarot. JOYería. Sustainable Art.</h3>
       </section>
       </header>
       </>

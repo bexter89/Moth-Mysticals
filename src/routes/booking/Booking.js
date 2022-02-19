@@ -22,6 +22,9 @@ const Booking = () => {
       <a name="contact" />
       <Jump>
       <h2>Get In Touch</h2>
+
+      <a id="Setmore_button_iframe" style={{float:'none'}} href="https://booking.setmore.com/scheduleappointment/dbee31de-b157-4b73-a457-c8095eb3a818"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Moth Mysticals" /></a>
+
       </Jump>
       <Col md="5" className="order-1 order-md-2">
         <ContactForm />

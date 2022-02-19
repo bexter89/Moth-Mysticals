@@ -5,29 +5,30 @@ html {
   text-align: center;
 }
 body {
-  margin-top: 70px;
+  margin-top: .5rem;
   background: #FEC3D0;
   font-family: Displace, 'Josefin Sans', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .Hero {
-  padding: 0 15%;
-  padding-bottom: 3rem;
+  padding: 0;
+  margin: 0;
 }
 
 .About {
   background-color: #F0C33B;
-  padding: 2.5% 15%;
+  padding: 25vh 15%;
 }
 
 .Tarot {
   background-color: #DC5C62;
-  padding: 2.5% 15%;
+  padding: 25vh 15%;
 }
 
 .Booking {
   background-color: #90D0DA;
-  padding: 2.5% 15%;
+  padding: 25vh 15%;
 }
 
 
