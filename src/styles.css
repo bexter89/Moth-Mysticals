@@ -5,7 +5,7 @@ html {
   text-align: center;
 }
 body {
-  margin-top: .5rem;
+  margin-top: .75rem;
   background: #FEC3D0;
   font-family: Displace, 'Josefin Sans', sans-serif;
   margin-bottom: 2rem;
@@ -18,24 +18,23 @@ body {
 
 .About {
   background-color: #F0C33B;
-  padding: 25vh 15%;
+  min-height: 50vh;
+  padding: 10rem;
 }
 
 .Tarot {
   background-color: #DC5C62;
-  padding: 25vh 15%;
+  padding: 3rem 15%;
 }
 
 .Booking {
   background-color: #90D0DA;
-  padding: 25vh 15%;
+  padding: 3rem 15%;
 }
 
-
 a.anchor {
-  display: block;
-  position: relative;
-  top: -50px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 .App {
@@ -59,56 +58,41 @@ strong {
 /**
 *  Responsive Styles
 */
-@media (min-width: 1800px) {
-  .Hero {
-    padding: 0 15%;
-    padding-bottom: 3rem;
-  }
-
+@media (min-width: 576px) and (max-width: 900px) {
   .About {
     background-color: #F0C33B;
-    padding: 2.5% 25%;
+    padding: 3rem 2rem;
   }
 
   .Tarot {
     background-color: #DC5C62;
-    padding: 2.5% 20%;
+    padding: 2.5% 2em;
   }
 
   .Booking {
     background-color: #90D0DA;
-    padding: 2.5% 20%;
+    padding: 3rem 20%;
   }
 }
 
 
 @media (max-width: 575px) {
-
   body {
     margin: 0;
     padding: 0;
   }
-  .Hero {
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
-  }
-
   .About {
     background-color: #F0C33B;
-    padding: 3% 8%;
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding: 12.5vh 1em;
   }
 
   .Tarot {
     background-color: #DC5C62;
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding: 12.5vh 0;
   }
-
   .Booking {
     background-color: #90D0DA;
-    padding: 3em 0;
+    padding: 12.5vh 1em;
   }
 }
 

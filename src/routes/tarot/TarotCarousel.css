@@ -1,0 +1,21 @@
+.CarouselImage {
+  border-radius: 2em;
+  max-height: 500px;
+  width: auto;
+}
+
+.EthicsSlideshow {
+  padding: 1em 2em;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+  background-color: rgba(255, 255, 255, 0.932);
+}
+
+
+@media (max-width: 750px) {
+  .EthicsSlideshow {
+    padding: 0;
+    font-size: 1em;
+  }
+}

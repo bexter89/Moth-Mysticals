@@ -1,36 +1,44 @@
+.About {
+  padding-right: 25%;
+}
 .About .bioPic {
   position: static;
   width: 600px;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
-  object-position: 80% 5;
+  object-position: 100% 15;
 }
 
 .About h2 {
   color: #DC5C62;
   font-size: 3em;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 .About .blurb {
   position: relative;
-  left: 120px;
-  max-width: 600px;
+  left: 50px;
+  width: 500px;
   color: black;
   background-color: white;
-  padding: 1em;
+  padding: 2.5em;
   font-weight: 100;
   line-height: 1.25;
   box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.5);
 }
 
-@media (max-width: 479px) {
-  .About .bioPic {
-    width: 100vw;
-    height: 300px;
-    object-fit: cover;
-    object-position: 70%;
+@media (max-width: 1200px) {
+
+  .About h2 {
+
   }
+  .About .blurb {
+
+  }
+}
+
+@media (max-width: 479px) {
   .About h2 {
     font-size: 2em;
   }

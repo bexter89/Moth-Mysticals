@@ -1,84 +1,26 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card'
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel'
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
-import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import dog from "../../../assets/imgs/MM_MOON_WEB.jpg";
 import skulls from "../../../assets/imgs/MM_skulls_WEB.jpg"
 import lungs from "../../../assets/imgs/MM_LUNGS_WEB.jpg"
 import vase from "../../../assets/imgs/MM_VASE_WEB.jpg"
 import crow from "../../../assets/imgs/MM_RAVEN_WEB.jpg"
-import styled, { css } from 'styled-components';
 
-const width = '60vw', height='20vh';
-const CarouselContainer = styled.div`
-  border: none;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  width: ${width};
-  background-color: #F2BFC8;;
-`;
-const CarouselChildren  = styled.div`
-  width: ${width};
-  position: relative;
-  height: ${height};
-`;
-const Arrow = styled.div`
-  z-index: 100;
-  line-height: ${height};
-  text-align: center;
-  position: absolute;
-  top: 0;
-  width: 10%;
-  color: #E98A9C;
-  font-size: 3em;
-  cursor: pointer;
-  user-select: none;
-  ${props => props.right ? css`left: 90%;` : css`left: 0%;`}
-`;
-const Dot = styled.span`
-  font-size: 1.5em;
-  cursor: pointer;
-  text-shadow: none;
-  user-select: none;
-`;
-const Dots = styled.span`
-  text-align: center;
-  color: #E98A9C;
-  width: ${width};
-  z-index: 100;
-`;
-const CarouselUI = ({ position, total, handleClick, children }) => (
-  <CarouselContainer className="CarouselContainer">
-    <CarouselChildren className="CarouselChildren">
-      {children}
-      <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
-      <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
-    </CarouselChildren>
-    <Dots className="Dots">
-      {Array(...Array(total)).map( (val, index) =>
-        <Dot key={index} onClick={handleClick} data-position={index}>
-          {index === position ? '● ' : '○ ' }
-        </Dot>
-      )}
-    </Dots>
-  </CarouselContainer>
-);
-
-const Carousel = makeCarousel(CarouselUI);
+import './TarotCarousel.css'
 
 export default function TarotCarousel () {
   const tarotEthics = [{
     num: "I.",
-    text: "Tarot and I will meet you right where you are without judgement. Please be prepared to do the same for yourself.",
+    text: "Tarot and I will meet you right where you are without judgment. Please be prepared to do the same for yourself.",
     image: dog,
   },
   {
     num:"II.",
-    text: "Bring an open heart, curiosity and imagination to your session. You’ll need one or all of these to see the new and fresh perspectives Tarot may offer you." ,
+    text: "Bring an open heart, curiosity and imagination to your session. You’ll need one or all of these to see the new and fresh perspectives Tarot may offer you.",
     image: lungs,
   },
   {
@@ -107,18 +49,29 @@ export default function TarotCarousel () {
     image: vase,
   }]
 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+
   return (
   <>
-  <Carousel>
+   <Carousel activeIndex={index} onSelect={handleSelect}  variant="dark">
       {tarotEthics.map((point, idx) => (
-    <Slide right key={point.num}>
-      <div key={point.num} className="EthicsSlideshow">
-        <h1>{point.num}</h1>
+        <Carousel.Item key={point.num}>
+           <Image flex
+            className="CarouselImage"
+            src={point.image}
+            alt={point.num}
+          />
+      <Carousel.Caption className="EthicsSlideshow">
+        <h2>{point.num}</h2>
         <p>{point.text}</p>
-      </div>
-    </Slide>
+      </Carousel.Caption>
+    </Carousel.Item>
     ))}
-
   </Carousel>
   </>
   )

@@ -1,30 +1,27 @@
 .Hero {
-  width: 100%;
-}
-
-.header-background {
-	position: relative;
-  background-color: #FEC3D0;
-  height: 100vh;
-  width: 100vw;
-	background-image: url("https://i.ibb.co/LRB1VSK/Artist-Favorites110-websize.png");
-}
-
-.Overlay {
-  position: absolute;
   height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-attachment: scroll;
 }
 
-.Overlay h1 {
+.hero-image {
+  background-color: #FEC3D0;
+	background-image: url("https://i.ibb.co/LRB1VSK/Artist-Favorites110-websize.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
   font-size: 5em;
   color: #CC555B;
   background-color: #F2BFC8;
@@ -44,10 +41,29 @@
   line-height: 1.25;
 }
 
+@media (min-width: 479px) and (max-width: 991px) {
+  .hero-image {
+    height: 90vh;
+    background-position: 70% 50%;
+    padding: 0;
+  }
+  .Overlay h1 {
+    font-size: 4em;
+    background-color: none;
+    padding: 0 .25em;
+    text-shadow: 1px 1px 0px rgba(204,85,89,0.5);
+  }
+  #hero-Text {
+    font-size: 3em;
+    padding: 0 .2em;
+    padding-top: .13em;
+    line-height: 1.25;
+  }
+}
+
 @media (max-width: 479px) {
-  .heroImage {
+  .hero-image {
     height: 50vh;
-    width: 80vw;
     background-position: 70% 50%;
     padding: 0;
   }

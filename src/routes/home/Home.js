@@ -10,7 +10,6 @@ import Tarot from '../tarot/Tarot'
 import Shop from '../shop/Shop'
 import moth from '../../../assets/imgs/moth_logo.png';
 import Pulse from 'react-reveal/Pulse';
-import HeroImage from '../hero/HeroImage'
 
 const Home = () => {
   const { displayNavState } = useContext(DisplayContext);
@@ -34,12 +33,15 @@ const Home = () => {
         <Hero />
       </Row>
       <Row className="About align-items-center justify-content-center">
+      <a className="anchor" name="about" ></a>
         <About />
       </Row>
       <Row className="Tarot align-items-center justify-content-center">
+      <a className="anchor" name="tarot" ></a>
         <Tarot />
       </Row>
       <Row className="Booking align-items-center justify-content-center">
+      <a className="anchor" name="contact" ></a>
         <Booking/>
       </Row>
     </Pulse>

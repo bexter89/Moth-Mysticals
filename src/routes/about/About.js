@@ -20,17 +20,16 @@ const About = () => {
 
   return (
     <>
-      <a name="about"/>
       <Col xs={12} md={6}>
       <Fade left>
-        <div className="blurb">
+        <article className="blurb">
           <h2>About Me</h2>
             {aboutText}
-        </div>
+        </article>
         </Fade>
       </Col>
       <Col xs={12} md={6}>
-        <Image fluid src={bioPic} alt="About Pic" className="bioPic" />
+        <Image flex src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
     </>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeroImage.css'
+import './Carousel.css'
 import strawberry from '../../../assets/imgs/strawberry.jpg'
 import Gabee_Show_Cards from '../../../assets/imgs/Gabee_Show_Cards.jpg'
 import Gabee_Show_CardsHiRes from '../../../assets/imgs/Gabee_Show_Cards_HiRes.jpg'
@@ -11,7 +11,7 @@ import tarot_earring from '../../../assets/imgs/tarot_with_earrings.jpg'
 import tarot_earringHiRes from '../../../assets/imgs/tarot_with_earrings_HiRes.jpg'
 
 
-export default function HeroImage () {
+export default function Carousel () {
   return (
     <div id="heroCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval={5000}>
       <div className="carousel-inner">
