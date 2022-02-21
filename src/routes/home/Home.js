@@ -33,7 +33,7 @@ const Home = () => {
       <Row className="Hero align-items-center justify-content-center">
         <Hero />
       </Row>
-      <Row className="About">
+      <Row className="About align-items-start justify-content-start">
       <a className="anchor" name="about" ></a>
         <About />
       </Row>
@@ -41,7 +41,7 @@ const Home = () => {
       <a className="anchor" name="tarot" ></a>
         <Tarot />
       </Row>
-      <Row className="Booking align-items-center justify-content-center">
+      <Row className="Booking align-items-start justify-content-start gx-5">
       <a className="anchor" name="booking" ></a>
         <Booking/>
       </Row>

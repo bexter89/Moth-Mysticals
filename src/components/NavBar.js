@@ -31,10 +31,13 @@ function NavBar() {
             <Nav.Link eventKey={2} href="#tarot">
               TAROT
             </Nav.Link>
-            <Nav.Link eventKey={3} href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer">
+            <Nav.Link eventKey={3} href="#booking">
+              BOOKING
+            </Nav.Link>
+            <Nav.Link eventKey={4} href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer">
               SHOP
             </Nav.Link>
-            <Nav.Link eventKey={4} href="#contact">
+            <Nav.Link eventKey={5} href="#contact">
               CONTACT
             </Nav.Link>
           </Nav>
