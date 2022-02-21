@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
+import Alert from "react-bootstrap/Alert";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "./ContactForm.css";
-import{ init } from '@emailjs/browser';
+import emailjs, { init } from '@emailjs/browser';
 init("user_FAmebZw7xCfdEtDd8aW5g");
 
 
 export default function ContactForm() {
+  const [formSent, setFormSent] = useState(false)
   const [toSend, setToSend] = useState({
-    name: "",
+    to_name: "Gabee",
+    from_name: "",
     subject: "",
     message: "",
-    email: "",
+    reply_to: "",
     pronouns: "",
   });
 
@@ -23,30 +26,54 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs.send("default_service", "MMcontact", toSend, "user_FAmebZw7xCfdEtDd8aW5g")
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        setFormSent(true)
+        setToSend(   { to_name: "Gabee",
+        from_name: "",
+        subject: "",
+        message: "",
+        reply_to: "",
+        pronouns: "",})
       })
       .catch((err) => {
         console.log("FAILED...", err);
+        alert('Please try correcting the form fields and sending again!')
       });
   };
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
-  return (
-    <Row>
+  return formSent ?
+  (
+    <Alert variant="success">
+    <Alert.Heading>Hey, nice to see you</Alert.Heading>
+      <p>
+        Aww yeah, you successfully read this important alert message. This example
+        text is going to run a bit longer so that you can see how spacing within an
+        alert works with this kind of content.
+      </p>
+      <hr />
+      <p className="mb-0">
+        Whenever you need to, be sure to use margin utilities to keep things nice
+        and tidy.
+      </p>
+    </Alert>
+  )
+  :
+  ( <Row>
       <Form onSubmit={onSubmit}>
         <Form.Floating className="mb-3">
           <Form.Control
-            id="first_name"
+            id="name"
+            value={toSend.from_name}
             type="text"
-            name='name'
+            name='from_name'
             placeholder="first name"
             onChange={handleChange}
           />
-          <label htmlFor="first_name">Name</label>
+          <label htmlFor="name">Name</label>
         </Form.Floating>
-        <Form.Select aria-label="pronoun dropdown" size="lg" className="mb-3" name='pronouns' onChange={handleChange}>
+        <Form.Select aria-label="pronoun dropdown" className="mb-3" name='pronouns' onChange={handleChange}>
           <option>Pronouns</option>
           <option value="she-her">She/Her</option>
           <option value="he-him">He/Him</option>
@@ -56,8 +83,9 @@ export default function ContactForm() {
         <Form.Floating className="mb-3">
           <Form.Control
             id="email"
+            value={toSend.reply_to}
             type="text"
-            name='email'
+            name='reply_to'
             placeholder="Email"
             onChange={handleChange}
           />
@@ -67,6 +95,7 @@ export default function ContactForm() {
           <Form.Control
             id="subject"
             type="text"
+            value={toSend.subject}
             name='subject'
             placeholder="Subject"
             onChange={handleChange}
@@ -76,6 +105,7 @@ export default function ContactForm() {
         <FloatingLabel controlId="floatingTextarea2" label="Message">
           <Form.Control
             as="textarea"
+            value={toSend.message}
             name='message'
             placeholder="Message to MothMysticals:"
             style={{ height: "150px" }}
@@ -89,5 +119,5 @@ export default function ContactForm() {
         </div>
       </Form>
     </Row>
-  );
+  )
 }
