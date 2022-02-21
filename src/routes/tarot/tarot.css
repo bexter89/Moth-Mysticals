@@ -1,7 +1,7 @@
 .Tarot-Summary {
-  background-color: #f2bfc8;
+  background-color: #84BF5E;
   color: black;
-  background-color: white;
+  background-color: #90D0DA;
   padding: 2.5em;
   font-weight: 100;
   line-height: 1.5;
@@ -9,14 +9,17 @@
 }
 
 .Tarot h2 {
-  color: #F0C33B;
+  color: #216472;
   font-size: 3rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 0px rgba(41, 16, 17, 0.2)
 }
 
-@media (max-width: 750px) {
+.Tarot h3 {
+  color: white;
+}
 
+@media (max-width: 750px) {
   .Tarot h2 {
     font-size: 1.5rem;
   }

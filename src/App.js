@@ -8,11 +8,6 @@ import { DisplayContext } from './components/DisplayContext';
 import Footer from "../src/components/Footer";
 import Welcome from "../src/components/Welcome"
 import Home from './routes/home/Home'
-import About from "./routes/about/About";
-import Tarot from "./routes/tarot/Tarot";
-import Decks from "./routes/tarot/Decks";
-import Booking from "./routes/booking/Booking";
-import Shop from "./routes/shop/Shop";
 import NoMatch from "./components/NoMatch"
 
 

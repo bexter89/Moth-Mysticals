@@ -1,14 +1,3 @@
-.Booking h2 {
-  color: #216472;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-@media (max-width: 700px) {
-  .Booking h2 {
-    font-size: 2.3rem;
-  }
-  .ContactImage {
-    margin-bottom: 2em;
-  }
+.Booking .Tarot-Summary {
+  background-color: white;
 }

@@ -4,9 +4,10 @@ import { DisplayContext } from '../../components/DisplayContext';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import About from '../about/About';
-import Booking from '../booking/Booking';
+import Contact from '../contact/Contact';
 import Hero from '../hero/Hero'
 import Tarot from '../tarot/Tarot'
+import Booking from '../booking/Booking'
 import Shop from '../shop/Shop'
 import moth from '../../../assets/imgs/moth_logo.png';
 import Pulse from 'react-reveal/Pulse';
@@ -32,7 +33,7 @@ const Home = () => {
       <Row className="Hero align-items-center justify-content-center">
         <Hero />
       </Row>
-      <Row className="About align-items-center justify-content-center">
+      <Row className="About">
       <a className="anchor" name="about" ></a>
         <About />
       </Row>
@@ -41,8 +42,12 @@ const Home = () => {
         <Tarot />
       </Row>
       <Row className="Booking align-items-center justify-content-center">
-      <a className="anchor" name="contact" ></a>
+      <a className="anchor" name="booking" ></a>
         <Booking/>
+      </Row>
+      <Row className="Contact align-items-center justify-content-center">
+      <a className="anchor" name="contact" ></a>
+        <Contact/>
       </Row>
     </Pulse>
   </>

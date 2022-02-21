@@ -1,6 +1,7 @@
 html {
   background: #FEC3D0;
   height: 100%;
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -20,16 +21,25 @@ body {
   background-color: #F0C33B;
   min-height: 50vh;
   padding: 10rem;
+  margin: 0;
 }
 
 .Tarot {
-  background-color: #DC5C62;
+  background-color: #84BF5E;
   padding: 3rem 15%;
+  margin: 0;
 }
 
 .Booking {
+  background-color: #FEC3D0;
+  padding: 3rem 15%;
+  margin: 0;
+}
+
+.Contact {
   background-color: #90D0DA;
   padding: 3rem 15%;
+  margin: 0;
 }
 
 a.anchor {
@@ -60,17 +70,14 @@ strong {
 */
 @media (min-width: 576px) and (max-width: 900px) {
   .About {
-    background-color: #F0C33B;
     padding: 3rem 2rem;
   }
 
   .Tarot {
-    background-color: #DC5C62;
     padding: 2.5% 2em;
   }
 
   .Booking {
-    background-color: #90D0DA;
     padding: 3rem 20%;
   }
 }
@@ -82,16 +89,13 @@ strong {
     padding: 0;
   }
   .About {
-    background-color: #F0C33B;
     padding: 12.5vh 1em;
   }
 
   .Tarot {
-    background-color: #DC5C62;
     padding: 12.5vh 0;
   }
   .Booking {
-    background-color: #90D0DA;
     padding: 12.5vh 1em;
   }
 }

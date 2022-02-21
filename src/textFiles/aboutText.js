@@ -3,9 +3,7 @@ import React from "react";
 const aboutText = (
   <>
     <p>
-      Moth Mysticals is Gabriella (she/they); a queer, intuitive tarot reader
-      and no-waste artist who believes caring for the earth is caring for the
-      community is caring for yourself.
+      Moth Mysticals is Gabriella (she/they); a queer, Biddy Tarot certified reader and channeling intuitive. They spend their time as a parent of two and no-waste artist who believes <q>caring for the earth is caring for the community is caring for yourself.</q>
       <br />
       <br />
       Using tarot and creative expression for accessing the JOY of life,

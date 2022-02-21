@@ -1,21 +1,28 @@
-.CarouselImage {
-  border-radius: 2em;
-  max-height: 500px;
-  width: auto;
+.carousel-inner {
+  height: 300px;
+  padding: 2em 5em;
+  align-items: center;
+  align-content: center;
+  background-color: #90D0DA;
 }
 
-.EthicsSlideshow {
-  padding: 1em 2em;
-  font-size: 1.5em;
-  border-radius: 5px;
-  margin-bottom: 4rem;
-  background-color: rgba(255, 255, 255, 0.932);
+#carousel-item {
+  background-color: #90D0DA;
 }
 
-
-@media (max-width: 750px) {
-  .EthicsSlideshow {
-    padding: 0;
-    font-size: 1em;
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
   }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
 }

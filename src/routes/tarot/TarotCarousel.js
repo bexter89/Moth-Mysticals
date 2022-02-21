@@ -58,21 +58,38 @@ export default function TarotCarousel () {
 
   return (
   <>
-   <Carousel activeIndex={index} onSelect={handleSelect}  variant="dark">
-      {tarotEthics.map((point, idx) => (
-        <Carousel.Item key={point.num}>
-           <Image
-            className="CarouselImage"
-            src={point.image}
-            alt={point.num}
-          />
-      <Carousel.Caption className="EthicsSlideshow">
-        <h2>{point.num}</h2>
-        <p>{point.text}</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    ))}
-  </Carousel>
+    <div id="tarotEthicsCarousel" className="carousel carousel-dark" data-bs-ride="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+        <span id="carousel-item">
+              <h3>Tarot Ethics</h3>
+              <p>
+              Please read all seven of the tarot ethics before booking an appointment.
+              </p>
+              </span>
+        </div>
+        {
+          tarotEthics.map(item =>
+            <div className="carousel-item" key={item.num}>
+              <span id="carousel-item">
+              <h3>{item.num}</h3>
+              <p>
+              {item.text}
+              </p>
+              </span>
+            </div>
+            )
+          }
+          </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#tarotEthicsCarousel" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#tarotEthicsCarousel" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
   </>
   )
 };
