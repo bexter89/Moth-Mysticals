@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button'
 import Jump from 'react-reveal/Jump';
 import wolf from "../../../assets/imgs/MM_MOON_WEB.jpg";
-import './Booking.css'
+import "./booking.css"
 
 function Booking () {
 
