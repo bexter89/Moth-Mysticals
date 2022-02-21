@@ -7,6 +7,7 @@ import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
 import { DisplayContext } from '../../components/DisplayContext';
 import './About.css'
+import Carousel from './Carousel'
 import bioPic from '../../../assets/imgs/Gabee_About.jpg'
 import aboutText from '../../textFiles/aboutText'
 
@@ -20,6 +21,7 @@ const About = () => {
 
   return (
     <>
+    <Row>
       <Col xs={12} md={6}>
       <Fade left>
         <article className="blurb">
@@ -29,8 +31,10 @@ const About = () => {
         </Fade>
       </Col>
       <Col xs={12} md={6}>
-        <Image flex src={bioPic} alt="About Pic" className="bioPic" />
+        <Image src={bioPic} alt="About Pic" className="bioPic" />
       </Col>
+    </Row>
+        <Carousel />
     </>
   )
 };

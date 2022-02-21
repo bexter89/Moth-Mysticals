@@ -61,7 +61,7 @@ export default function TarotCarousel () {
    <Carousel activeIndex={index} onSelect={handleSelect}  variant="dark">
       {tarotEthics.map((point, idx) => (
         <Carousel.Item key={point.num}>
-           <Image flex
+           <Image
             className="CarouselImage"
             src={point.image}
             alt={point.num}
