@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={6} className="justify-content-center">
       <Fade left>
         <article className="blurb">
           <h2>About Me</h2>

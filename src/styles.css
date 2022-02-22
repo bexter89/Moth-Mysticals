@@ -91,12 +91,20 @@ strong {
   .About {
     padding: 12.5vh 1em;
   }
-
+  .Contact {
+    padding: 0;
+    padding-top: 1em;
+    margin: 2.28em 0;
+  }
+  .Hero {
+    padding: 0;
+    margin: 0;
+  }
   .Tarot {
-    padding: 12.5vh 0;
+    padding: 4vh 1em;
   }
   .Booking {
-    padding: 12.5vh 1em;
+    padding: 5.5vh 0;
   }
 }
 

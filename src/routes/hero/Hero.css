@@ -18,7 +18,7 @@
   text-align: center;
   position: absolute;
   top: 40%;
-  left: 18%;
+  left: 16%;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -31,7 +31,7 @@
   text-shadow: 1px 1px 0px rgba(204,85,89,0.5);
 }
 
-#hero-Text {
+.hero-text h3 {
   background-color: #F2BFC8;
   font-family: Displace, 'Josefin Sans', sans-serif;
   text-transform: capitalize;
@@ -43,42 +43,75 @@
   line-height: 1.25;
 }
 
-@media (min-width: 479px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1300px) {
   .hero-image {
-    height: 90vh;
-    background-position: 70% 50%;
+    background-position: 50% 50%;
     padding: 0;
   }
-  .Overlay h1 {
-    font-size: 4em;
-    background-color: none;
-    padding: 0 .25em;
-    text-shadow: 1px 1px 0px rgba(204,85,89,0.5);
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
-  #hero-Text {
-    font-size: 3em;
+  .hero-text h1 {
+    font-size: 3.5em;
+    padding: 0 .25em;
+  }
+ .hero-text h3 {
+    font-size: 2em;
     padding: 0 .2em;
     padding-top: .13em;
-    line-height: 1.25;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 991px) {
+  .hero-image {
+    background-position: 50% 50%;
+    padding: 0;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero-text h1 {
+    font-size: 3em;
+    padding: 0 .25em;
+  }
+ .hero-text h3 {
+    padding: 0 .2em;
+    padding-top: .13em;
   }
 }
 
 @media (max-width: 479px) {
   .hero-image {
-    height: 50vh;
-    background-position: 70% 50%;
+    height: 65vh;
+    background-position: 45% 50%;
     padding: 0;
   }
-  .Overlay h1 {
-    font-size: 2em;
-    background-color: none;
-    padding: 0 .5em;
-    text-shadow: 1px 1px 0px rgba(204,85,89,0.5);
+  .hero-text h1 {
+    font-size: 1.6em;
+    padding: 0 .22em;
   }
-  #hero-Text {
-    font-size: 1.25em;
-    padding: 0 .2em;
-    padding-top: .125em;
+  .hero-text h3 {
+    font-size: 1em;
+    padding: 0;
+    padding-top: .13em;
+  }
+  .hero-text {
+    position: absolute;
+    top: 45%;
+    left: 4rem;
+    transform: translate(-50%, -20%);
+    padding: 0;
+    margin-right: 2em;
     line-height: 1.25;
   }
 }

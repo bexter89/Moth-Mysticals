@@ -22,7 +22,7 @@ export default function Hero() {
         <Zoom>
           <div className="hero-text" style={{ bottom: offset / 1.5 }}>
             <h1>MOTH MYSTICALS</h1>
-            <h3 id="hero-Text">Tarot. JOYería. Sustainable Art.</h3>
+            <h3>Tarot. JOYería. Sustainable Art.</h3>
           </div>
         </Zoom>
       </div>

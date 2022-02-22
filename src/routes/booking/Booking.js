@@ -12,7 +12,7 @@ function Booking () {
 
   return (
     <>
-      <Col md="6" className="align-self-start">
+      <Col lg={6} md={12} className="align-self-start">
       <Jump>
         <h2>Booking</h2>
       </Jump>
@@ -27,7 +27,7 @@ function Booking () {
         </p>
         <a id="Setmore_button_iframe" style={{float:'none'}} href="https://booking.setmore.com/scheduleappointment/dbee31de-b157-4b73-a457-c8095eb3a818"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Moth Mysticals" /></a>
       </Col>
-      <Col md="6">
+      <Col lg={6} md={12} >
         <Image
           className="BookingImage"
           fluid

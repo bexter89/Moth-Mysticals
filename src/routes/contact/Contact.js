@@ -7,7 +7,7 @@ import Jump from "react-reveal/Jump";
 import "./Contact.css";
 import yellowbgCards from "../../../assets/imgs/yellowbgCardsVertical.jpg";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <>
       <Col sm={12} md={6} className="ContactForm order-1 order-md-2">
@@ -16,7 +16,7 @@ const Contact = () => {
             <h2>Get In Touch</h2>
           </Jump>
         </Row>
-        <Row>
+        <Row className="align-items-center justify-content-center">
           <ContactForm />
         </Row>
       </Col>
@@ -31,5 +31,3 @@ const Contact = () => {
     </>
   );
 };
-
-export default Contact;
