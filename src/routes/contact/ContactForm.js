@@ -95,7 +95,7 @@ export default function ContactForm() {
   return formSent ? (
     <FormSentConfirmation messageCopy={messageCopy} />
   ) : (
-    <Row className="ContactForm align-items-center justify-content-center">
+    <Row className="ContactForm align-items-center justify-content-start">
       <Form onSubmit={handleSubmit} noValidate validated={validated}>
         <Form.Floating className="mb-2">
           <Form.Control

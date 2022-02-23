@@ -20,10 +20,10 @@ function NavBar() {
             height="40"
             className="d-inline-block align-top"
           />{' '}
-            MOTH MYSTICALS
+            MOTH &nbsp; MYSTICALS
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Link eventKey={1} href="#about">
               ABOUT
