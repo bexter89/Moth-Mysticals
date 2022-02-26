@@ -8,11 +8,8 @@ import skulls from "../../../assets/imgs/MM_skulls_WEB.jpg";
 import lungs from "../../../assets/imgs/MM_LUNGS_WEB.jpg";
 import vase from "../../../assets/imgs/MM_VASE_WEB.jpg";
 import crow from "../../../assets/imgs/MM_RAVEN_WEB.jpg";
-
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import {  CustomLeftArrow,
-  CustomRightArrow } from './CustomArrows.js'
+import Carousel from 'react-multi-carousel';
+import '../../../node_modules/react-multi-carousel/lib/styles.css';
 import "./TarotCarousel.css";
 
 const responsive = {
@@ -76,18 +73,15 @@ export default function TarotCarousel() {
     <>
       <Carousel
         responsive={responsive}
-        arrows
         centerMode={false}
         infinite={false}
-        itemClass="carousel-item-padding-40-px"
+        itemClass="carousel-item-padding-20-px"
         containerClass="carousel-container"
-        customLeftArrow={<CustomLeftArrow />}
-        customRightArrow={<CustomRightArrow />}
         showDots={false}
       >
           {tarotEthics.map((item) => (
             <div key={item.num}>
-              <span>
+              <span style={{ width: "100%", height: "100%" }}>
                 <h3>{item.num}</h3>
                 <p>{item.text}</p>
               </span>
@@ -95,8 +89,6 @@ export default function TarotCarousel() {
           ))}
       </Carousel>
       <br/>
-      <CustomLeftArrow />
-      <CustomRightArrow />
     </>
   );
 }

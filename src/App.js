@@ -2,7 +2,6 @@ import React, { useState, useContext, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Routes, Route, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import WebFont from 'webfontloader';
 import "./styles.css";
 import "./fonts.css";
 import { DisplayContext } from './components/DisplayContext';
@@ -15,17 +14,6 @@ import NoMatch from "./components/NoMatch"
 const App = () => {
   const { displayNavState, displayTitleState } = useContext(DisplayContext);
   const [displayNav, setDisplayNav] = displayNavState;
-
-  useEffect(() => {
-    WebFont.load({
-      custom: {
-        families: ['My Font', 'My Other Font:n4,i4,n7'],
-        urls: ['./fonts.css']
-      }
-    });
-   }, []);
-
-
 
   return (
     <>
@@ -51,7 +39,5 @@ const App = () => {
     </>
   );
 }
-
-
 
 export default App;

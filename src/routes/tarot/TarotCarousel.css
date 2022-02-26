@@ -1,7 +1,11 @@
-.carousel-item-padding-40-px {
+.carousel-item-padding-20-px {
   height: 20rem;
   width: 150px;
   padding: 2em 2em;
   margin: 5px;
   background-color: #90D0DA;
+}
+
+.carousel-container {
+  width: 100%;
 }

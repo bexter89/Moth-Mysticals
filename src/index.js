@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Popper from "@popperjs/core";
-import WebFont from "webfontloader";
-import WebfontLoader from "@dr-kobros/react-webfont-loader";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -16,23 +14,12 @@ import Displace from "../assets/fonts/Displace.ttf";
 import "./styles.css";
 import "./fonts.css";
 
-const config = {
-  custom: {
-    families: ["Displace", "PaloSanto"],
-    urls: ["./fonts.css"],
-  },
-};
-
 ReactDOM.render(
-  <WebfontLoader
-    config={config}
-  >
     <BrowserRouter>
       <DisplayProvider>
         <App />
         <Footer />
       </DisplayProvider>
-    </BrowserRouter>
-  </WebfontLoader>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
