@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import NavBar from './components/NavBar'
 import Footer from "./components/Footer";
 import PaloSanto from "../assets/fonts/PaloSanto.ttf";
 import Displace from "../assets/fonts/Displace.ttf";
@@ -15,8 +16,9 @@ import "./styles.css";
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
-        <Footer />
+      <NavBar />
+      <App />
+      <Footer />
     </BrowserRouter>,
   document.getElementById("root")
 );
