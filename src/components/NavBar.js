@@ -34,7 +34,7 @@ function NavBar() {
             <Nav.Link eventKey={3} href="#booking">
               BOOKING
             </Nav.Link>
-            <Nav.Link eventKey={4} href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer">
+            <Nav.Link eventKey={4} href="#shop">
               SHOP
             </Nav.Link>
             <Nav.Link eventKey={5} href="#contact">

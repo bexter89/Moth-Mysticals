@@ -1,38 +1,28 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Helmet } from "react-helmet"
-import { DisplayContext } from '../../components/DisplayContext';
-import vase from "../../../assets/imgs/MM_VASE_WEB.jpg";
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Form from "react-bootstrap/Form";
+import Image from "react-bootstrap/Image";
+import Col from "react-bootstrap/Col";
+import Button from 'react-bootstrap/Button'
+import Jump from 'react-reveal/Jump';
+import Carousel from './carousel/Carousel'
+import './shop.css'
 
 const Shop = () => {
-  const { displayNavState } = useContext(DisplayContext);
-  const [displayNav, setDisplayNav] = displayNavState;
-
-  useEffect(() => {
-    setDisplayNav(true);
-  }, []);
-
   return (
     <>
-      <Helmet>
-        <title>Shop - Moth Mysticals</title>
-        <meta
-          name="description"
-          content="Shop Moth Mysticals"
-        />
-      </Helmet>
-      <h1>SHOP</h1>
-      <hr />
-      <div className="col-md-6 text-center">
-        <img src={vase} className="imageCard" alt="vase" fluid />
-      </div>
-      <div className="col-md-6 text-center">
-        <div className="row justify-content-center blurb">
-            <section>
-            <h2>JOYería</h2>
-              some text will eventually go here!
-            </section>
-        </div>
-      </div>
+      <Col lg={6} md={12} className="Shop align-self-start">
+      <Jump>
+        <h2>Shop</h2>
+      </Jump>
+        <p className="Shop-Summary">
+        I use tarot for self-reflection, evolution and empowerment. I, nor the cards, can or will predict your future. Instead, I will offer insight into the present.
+        </p>
+        <Button href="https://www.etsy.com/shop/MothMysticals" target="_blank" rel="noopener noreferrer" variant="info">Shop on Etsy</Button>
+      </Col>
+      <Col lg={6} md={12} className="align-self-start" >
+        <Carousel className="ShopCarousel"/>
+      </Col>
     </>
   );
 };

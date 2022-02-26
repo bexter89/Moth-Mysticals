@@ -45,6 +45,10 @@ const Home = () => {
       <a className="anchor" name="booking" ></a>
         <Booking/>
       </Row>
+      <Row className="Shop align-items-start justify-content-start gx-5">
+      <a className="anchor" name="shop" ></a>
+        <Shop/>
+      </Row>
       <Row className="Contact align-items-center justify-content-center">
       <a className="anchor" name="contact" ></a>
         <Contact/>

@@ -57,7 +57,13 @@ body {
 
 .Booking {
   background-color: #FEC3D0;
-  padding: 4rem 15%;
+  padding: 4rem 5%;
+  margin: 0;
+}
+
+.Shop {
+  background-color: #216472;
+  padding: 4rem 5%;
   margin: 0;
 }
 
