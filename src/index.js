@@ -13,7 +13,6 @@ import PaloSanto from "../assets/fonts/PaloSanto.ttf";
 import Displace from "../assets/fonts/Displace.ttf";
 import revicons from '../assets/fonts/revicons.ttf'
 import "./styles.css";
-import "./fonts.css";
 
 ReactDOM.render(
     <BrowserRouter>
