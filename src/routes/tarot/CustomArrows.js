@@ -1,11 +1,11 @@
 import React from "react";
 import './CustomArrows.css'
 
-const CustomLeftArrow = ({ onClick }) => (
-  <i onClick={() => onClick()} className="bi bi-chevron-left" style={{fontFamily: 'sans-serif',fontSize: "2rem", color: "cornflowerblue"}} />
-);
+const CustomLeftArrow = ({ onClick }) => {
+  return <div><i onClick={() => onClick()} className="bi bi-chevron-left" style={{fontFamily: 'sans-serif',fontSize: 50, color: 'white'}}></i></div>;
+};
 const CustomRightArrow = ({ onClick }) => {
-  return <i className="bi bi-chevron-right" style={{fontFamily: 'sans-serif', fontSize: "2rem", color: "cornflowerblue"}} onClick={() => onClick()} />;
+  return <div><i className="bi bi-chevron-right" style={{fontFamily: 'sans-serif',fontSize: 50, color: 'white'}} onClick={() => onClick()}></i></div>;
 };
 
 const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {

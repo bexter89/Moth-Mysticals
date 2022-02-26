@@ -81,6 +81,8 @@ export default function TarotCarousel() {
         infinite={false}
         itemClass="carousel-item-padding-40-px"
         containerClass="carousel-container"
+        customLeftArrow={<CustomLeftArrow />}
+        customRightArrow={<CustomRightArrow />}
         showDots={false}
       >
           {tarotEthics.map((item) => (
@@ -94,6 +96,7 @@ export default function TarotCarousel() {
       </Carousel>
       <br/>
       <CustomLeftArrow />
+      <CustomRightArrow />
     </>
   );
 }
