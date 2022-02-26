@@ -1,11 +1,16 @@
-.carousel-item-padding-20-px {
+.tarot-ethics-item {
   height: 20rem;
-  width: 150px;
-  padding: 2em 2em;
-  margin: 5px;
+  width: auto;
+  margin: .5em;
+  padding: 2em 1em;
   background-color: #90D0DA;
+
 }
 
-.carousel-container {
-  width: 100%;
+.react-multiple-carousel__arrow--left {
+  left: 1px;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 1px;
 }

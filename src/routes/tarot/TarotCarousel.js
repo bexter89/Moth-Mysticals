@@ -75,16 +75,14 @@ export default function TarotCarousel() {
         responsive={responsive}
         centerMode={false}
         infinite={false}
-        itemClass="carousel-item-padding-20-px"
+        itemClass="carousel-item-padding-1-px"
         containerClass="carousel-container"
         showDots={false}
       >
           {tarotEthics.map((item) => (
-            <div key={item.num}>
-              <span style={{ width: "100%", height: "100%" }}>
-                <h3>{item.num}</h3>
-                <p>{item.text}</p>
-              </span>
+            <div key={item.num} className="tarot-ethics-item">
+              <h3>{item.num}</h3>
+              <p>{item.text}</p>
             </div>
           ))}
       </Carousel>
