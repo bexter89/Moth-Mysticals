@@ -9,8 +9,8 @@ import { BrowserRouter } from "react-router-dom";
 import { DisplayProvider } from './components/DisplayContext';
 import App from './App';
 import Footer from './components/Footer'
-import PaloSanto from './fonts/PaloSanto.eot'
-import Displace from './fonts/Serebryakov-Displace.eot'
+import PaloSanto from '../assets/fonts/PaloSanto.ttf'
+import Displace from '../assets/fonts/Displace.ttf'
 import './styles.css'
 import './fonts.css'
 
