@@ -1,9 +1,0 @@
-/*
-Removes white gap between slides - chagnge to base color of slide images
-*/
-.carousel {
-  background:#F0C33B;
-  height: 50%;
-  box-shadow: 3px 3px 15px -3px rgba(0,0,0,0.5);
-}
-

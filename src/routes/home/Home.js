@@ -8,7 +8,6 @@ import Contact from '../contact/Contact';
 import Hero from '../hero/Hero'
 import Tarot from '../tarot/Tarot'
 import Booking from '../booking/Booking'
-import Shop from '../shop/Shop'
 import moth from '../../../assets/imgs/moth_logo.png';
 import Pulse from 'react-reveal/Pulse';
 
@@ -44,10 +43,6 @@ const Home = () => {
       <Row className="Booking align-items-start justify-content-start gx-5">
       <a className="anchor" name="booking" ></a>
         <Booking/>
-      </Row>
-      <Row className="Shop align-items-start justify-content-start gx-5">
-      <a className="anchor" name="shop" ></a>
-        <Shop/>
       </Row>
       <Row className="Contact align-items-center justify-content-center">
       <a className="anchor" name="contact" ></a>
