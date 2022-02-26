@@ -4,6 +4,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from "react-router-dom";
 import App from './App';
 import Footer from './components/Footer'
+import Popper from '@popperjs/core';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { DisplayProvider } from './components/DisplayContext';
 import PaloSanto from '../assets/fonts/palosanto-webfont.woff'
 import '../assets/fonts/palosanto-webfont.woff2'

@@ -37,7 +37,7 @@ const Home = () => {
       <a className="anchor" name="about" ></a>
         <About />
       </Row>
-      <Row className="Tarot align-items-center justify-content-center">
+      <Row className="Tarot">
       <a className="anchor" name="tarot" ></a>
         <Tarot />
       </Row>

@@ -14,6 +14,7 @@ const aboutText = (
     <p className="text-center">
       Find Moth Mysticals on Instagram:
       <br />
+      <i className="bi bi-instagram" role="img" aria-label="Instagram"></i>
       <a
         href="https://www.instagram.com/mothmysticals/"
         target="_blank"
