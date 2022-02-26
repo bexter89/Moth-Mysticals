@@ -22,6 +22,7 @@ const Tarot = () => {
       <Row className="justify-content-center mt-5">
         <TarotCarousel />
       </Row>
+      <i className="bi bi-chevron-right" style={{fontFamily: 'sans-serif',fontSize: 50 }}></i>
       </section>
     </>
   );
