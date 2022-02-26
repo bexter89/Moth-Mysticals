@@ -1,22 +1,9 @@
 /*
 Removes white gap between slides - chagnge to base color of slide images
 */
-
-.About .carousel {
+.carousel {
   background:#F0C33B;
+  height: 50%;
+  box-shadow: 3px 3px 15px -3px rgba(0,0,0,0.5);
 }
 
-/*
-Forces image to be 100% width and not max width of 100%
-*/
-.carousel-item .img-fluid {
-  width:100%;
-}
-
-/*
-anchors are inline so you need ot make them block to go full width
-*/
-.carousel-item a {
-  display: block;
-  width:100%;
-}

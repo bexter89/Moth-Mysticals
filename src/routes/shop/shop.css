@@ -1,29 +1,29 @@
-.Shop .Tarot-Summary {
-  background-color: transparent;
-  box-shadow: none;
-  text-align: left;
-}
-
-.ShopCarousel {
-  width: 50%;
-  height: auto;
-}
-
-.ShopCarousel {
-  width: 100%;
-  height: 60vh;
-}
-
 .Shop h2 {
   font-size: 3em;
   color: #E9BE43;
+  text-shadow: 1px 1px 0px rgba(92, 91, 91, 0.25);
 }
 
+.Shop h3 {
+  color: #CC5559;
+  text-transform: none;
+  font-family: Displace;
+  background-color: #E9BE43;
+  line-height: 1.25em;
+  padding-left: .25em;
+  text-align: left;
+}
 .Shop p {
   font-size: 1.125em;
   line-height: 1.5;
   margin: 0;
   padding: 1em;
+}
+
+.Shop .Shop-Summary {
+  background-color: transparent;
+  box-shadow: none;
+  text-align: left;
 }
 
 @media (max-width: 1200px) {

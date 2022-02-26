@@ -39,6 +39,7 @@ function Booking() {
           My hope is that you leave your session feeling empowered and spacious
           in the here and now.
         </p>
+        <br/>
         <Button
           href="https://booking.setmore.com/scheduleappointment/dbee31de-b157-4b73-a457-c8095eb3a818"
           target="_blank"

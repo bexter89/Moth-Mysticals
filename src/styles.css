@@ -62,8 +62,8 @@ body {
 }
 
 .Shop {
-  background-color: #216472;
-  padding: 4rem 5%;
+  background-color: #CC5559;
+  padding: 2.5rem 5%;
   margin: 0;
 }
 
@@ -109,7 +109,7 @@ strong {
   }
 
   .Booking {
-    padding: 3rem 20%;
+    padding: 3rem 10%;
   }
 }
 

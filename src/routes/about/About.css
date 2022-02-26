@@ -1,6 +1,10 @@
+.About {
+  padding-right: 10em;
+}
+
 .About .bioPic {
   position: static;
-  width: 600px;
+  width: 620px;
   height: 600px;
   object-fit: cover;
   object-position: 100% 15;
@@ -15,7 +19,7 @@
 
 .About .blurb {
   position: relative;
-  left: 25%;
+  left: 15%;
   top: 15%;
   width: 500px;
   color: black;
@@ -27,6 +31,9 @@
 }
 
 @media (max-width: 1200px) {
+  .About {
+    padding-right: 5em;
+  }
   .About h2 {
     font-size: 1.5em;
   }
