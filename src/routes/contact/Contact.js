@@ -12,9 +12,7 @@ export default function Contact() {
     <>
       <Col sm={12} md={6} className="ContactForm order-1 order-md-2">
         <Row className="align-items-start">
-          <Jump>
-            <h2>Get In Touch</h2>
-          </Jump>
+          <h2>Get In Touch</h2>
         </Row>
         <Row className="align-items-center justify-content-center">
           <ContactForm />

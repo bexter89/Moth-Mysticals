@@ -8,7 +8,6 @@ import Hero from '../hero/Hero'
 import Tarot from '../tarot/Tarot'
 import Booking from '../booking/Booking'
 import moth from '../../../assets/imgs/moth_logo.png';
-import Pulse from 'react-reveal/Pulse';
 
 const Home = () => {
 
@@ -22,7 +21,6 @@ const Home = () => {
         />
     </Helmet>
     <a className="anchor" name="home" id="top"></a>
-    <Pulse>
       <Row className="Hero align-items-center justify-content-center">
         <Hero />
       </Row>
@@ -42,7 +40,6 @@ const Home = () => {
       <a className="anchor" name="contact" ></a>
         <Contact/>
       </Row>
-    </Pulse>
   </>
   )
 };
