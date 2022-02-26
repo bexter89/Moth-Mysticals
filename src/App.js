@@ -1,19 +1,14 @@
-import React, { useState, useContext, useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { Routes, Route, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import "./styles.css";
-import "./fonts.css";
-import { DisplayContext } from './components/DisplayContext';
 import Footer from "../src/components/Footer";
-import Welcome from "../src/components/Welcome"
 import Home from './routes/home/Home'
 import NoMatch from "./components/NoMatch"
 
 
 const App = () => {
-  const { displayNavState, displayTitleState } = useContext(DisplayContext);
-  const [displayNav, setDisplayNav] = displayNavState;
 
   return (
     <>
@@ -32,8 +27,8 @@ const App = () => {
     </Helmet>
 
       <Routes>
-        {/* <Route path="/" element={<Welcome />} /> */}
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
     </>

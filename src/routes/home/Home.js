@@ -1,6 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import { DisplayContext } from '../../components/DisplayContext';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import About from '../about/About';
@@ -12,11 +11,6 @@ import moth from '../../../assets/imgs/moth_logo.png';
 import Pulse from 'react-reveal/Pulse';
 
 const Home = () => {
-  const { displayNavState } = useContext(DisplayContext);
-  const [displayNav, setDisplayNav] = displayNavState;
-  useEffect(() => {
-    setDisplayNav(true);
-  }, []);
 
   return (
   <>

@@ -1,16 +1,9 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
-import { DisplayContext } from './DisplayContext';
 import skull from "../../assets/imgs/MM_skulls_WEB.jpg";
 
 const NoMatch = () => {
-  const { displayNavState } = useContext(DisplayContext);
-  const [displayNav, setDisplayNav] = displayNavState;
-  useEffect(() => {
-    setDisplayNav(true);
-  }, []);
   const navigate = useNavigate();
-
   const handleHomeClick = () => {
     navigate('/home');
   };
