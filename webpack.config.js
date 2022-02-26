@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|ttf|eot|otf)$/,
-        use: 'file-loader'
+        use: 'url-loader'
       },
       {
         test: /\.css$/i,
