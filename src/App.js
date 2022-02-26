@@ -14,7 +14,7 @@ import NoMatch from "./components/NoMatch"
 const App = () => {
   const { displayNavState, displayTitleState } = useContext(DisplayContext);
   const [displayNav, setDisplayNav] = displayNavState;
-  const [title, setTitle] = displayTitleState;
+
   return (
     <>
     <div className="App">

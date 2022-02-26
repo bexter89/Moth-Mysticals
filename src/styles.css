@@ -16,7 +16,6 @@
       url('https://www.dropbox.com/s/8q6hq4z4t4xuyfc/displace.woff') format('woff');
 }
 
-
 html {
   background: #FEC3D0;
   height: 100%;
@@ -24,6 +23,7 @@ html {
   position: relative;
   text-align: center;
 }
+
 body {
   margin-top: .75rem;
   background: #FEC3D0;
