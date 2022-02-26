@@ -8,14 +8,14 @@ import Footer from './components/Footer'
 import Popper from '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { DisplayProvider } from './components/DisplayContext';
-import PaloSanto from '../assets/fonts/palosanto-webfont.woff'
-import '../assets/fonts/palosanto-webfont.woff2'
-import '../assets/fonts/PaloSanto.eot'
-import '../assets/fonts/PaloSanto.otf'
-import Displace from '../assets/fonts/Serebryakov-Displace.eot'
-import '../assets/fonts/Serebryakov-Displace.otf'
-import '../assets/fonts/serebryakov_-_displace-webfont.woff'
-import '../assets/fonts/serebryakov_-_displace-webfont.woff2'
+import PaloSanto from './fonts/palosanto-webfont.woff'
+import './fonts/palosanto-webfont.woff2'
+import './fonts/PaloSanto.eot'
+import './fonts/PaloSanto.otf'
+import Displace from './fonts/Serebryakov-Displace.eot'
+import './fonts/Serebryakov-Displace.otf'
+import './fonts/serebryakov_-_displace-webfont.woff'
+import './fonts/serebryakov_-_displace-webfont.woff2'
 import './styles.css'
 import './fonts.css'
 
