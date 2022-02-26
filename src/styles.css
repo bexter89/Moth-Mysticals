@@ -51,7 +51,7 @@ body {
 
 .Tarot {
   background-color: #84BF5E;
-  padding: 3rem 10%;
+  padding: 3rem 5%;
   margin: 0;
 }
 
@@ -118,7 +118,6 @@ strong {
   }
   .Contact {
     padding: 0;
-    padding-top: 1em;
     margin: 2.28em 0;
   }
   .Hero {

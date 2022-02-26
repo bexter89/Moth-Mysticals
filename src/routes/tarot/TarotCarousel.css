@@ -1,10 +1,9 @@
 .tarot-ethics-item {
   height: 20rem;
   width: auto;
-  margin: .5em;
+  margin: 1em;
   padding: 2em 1em;
   background-color: #90D0DA;
-
 }
 
 .react-multiple-carousel__arrow--left {
@@ -13,4 +12,16 @@
 
 .react-multiple-carousel__arrow--right {
   right: 1px;
+}
+
+
+@media (max-width: 575px) {
+  .tarot-ethics-item {
+    height: 15rem;
+    width: auto;
+    margin: 0;
+    padding: 3em 2.5em;
+    padding-right: 4em;
+    background-color: #90D0DA;
+  }
 }

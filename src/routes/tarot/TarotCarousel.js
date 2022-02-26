@@ -14,20 +14,20 @@ import "./TarotCarousel.css";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 1, // optional, default to 1.
+    breakpoint: { max: 3000, min: 1025 },
+    items: 5,
+    paritialVisibilityGutter: 60
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 4,
-    slidesToSlide: 1, // optional, default to 1.
+    breakpoint: { max: 1024, min: 501 },
+    items: 3,
+    paritialVisibilityGutter: 50
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 500, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
+    paritialVisibilityGutter: 30
+  }
 };
 
 export default function TarotCarousel() {
@@ -73,8 +73,10 @@ export default function TarotCarousel() {
     <>
       <Carousel
         responsive={responsive}
+        arrows
         centerMode={false}
         infinite={false}
+        autoPlay={false}
         itemClass="carousel-item-padding-1-px"
         containerClass="carousel-container"
         showDots={false}

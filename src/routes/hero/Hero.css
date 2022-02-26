@@ -115,3 +115,29 @@
     line-height: 1.25;
   }
 }
+
+@media (max-width: 415px) {
+  .hero-image {
+    height: 75vh;
+    background-position: 40% 50%;
+    padding: 0;
+  }
+  .hero-text h1 {
+    font-size: 2.5em;
+    padding: 0 .22em;
+  }
+  .hero-text h3 {
+    font-size: 1.25em;
+    padding: 0;
+    padding-top: .13em;
+  }
+  .hero-text {
+    position: absolute;
+    top: 45%;
+    left: 2rem;
+    transform: translate(-50%, -20%);
+    padding: 0;
+    margin-right: 2em;
+    line-height: 1.25;
+  }
+}
