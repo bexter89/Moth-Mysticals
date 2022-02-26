@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Displace';
   src: local("Displace"), local("Serebryakov-Displace"),
-      url("https://www.dropbox.com/s/tkg26tngtsfzoea/Serebryakov%20-%20Displace.otf") format("opentype"),
-      url('https://www.dropbox.com/s/anvmkszgho7yowy/Displace.ttf?dl=0') format('truetype'),
+      url("https://raw.githubusercontent.com/bexter89/Moth-Mysticals/blob/main/assets/fonts/Displace.otf") format("opentype"),
+      url('https://raw.githubusercontent.com/bexter89/Moth-Mysticals/blob/main/assets/fonts/Displace.ttf') format('truetype'),
       url('https://www.dropbox.com/s/l8f5zgp38emnum5/displace.woff2') format('woff2'),
       url('https://www.dropbox.com/s/8q6hq4z4t4xuyfc/displace.woff?dl=0') format('woff');
 }
@@ -10,8 +10,8 @@
 @font-face {
   font-family: 'PaloSanto';
   src: local("PaloSanto"), local("Palo Santo"),
-      url('https://www.dropbox.com/s/w2zpbyz34bgm0i5/PaloSanto.otf?dl=0') format("opentype"),
-      url('https://www.dropbox.com/s/nlexh4d5b1mnrbf/PaloSanto.ttf') format('truetype'),
+      url('https://raw.githubusercontent.com/bexter89/Moth-Mysticals/blob/main/assets/fonts/PaloSanto.otf') format("opentype"),
+      url('https://raw.githubusercontent.com/bexter89/Moth-Mysticals/blob/main/assets/fonts/PaloSanto.ttf') format('truetype'),
       url('https://www.dropbox.com/s/w6gitvpe6541tya/palosanto.woff2') format('woff2'),
       url('https://www.dropbox.com/s/8q6hq4z4t4xuyfc/displace.woff') format('woff');
 }
