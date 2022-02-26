@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Displace';
+  src: local("Displace"), local("Serebryakov-Displace"),
+      url("https://www.dropbox.com/sh/t7pomepcpxyw369/AAAIw5T46BlMbfRr6SWKrvd6a?dl=0&preview=Serebryakov+-+Displace.otf") format("opentype"),
+      url('../assets/fonts/Displace.ttf') format('truetype'),
+      url('../assets/fonts/serebryakov_-_displace-webfont.woff2') format('woff2'),
+      url('../assets/fonts/serebryakov_-_displace-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PaloSanto';
+  src: local("PaloSanto"), local("Palo Santo"),
+      url('https://www.dropbox.com/sh/t7pomepcpxyw369/AAAIw5T46BlMbfRr6SWKrvd6a?dl=0&preview=PaloSanto.otf') format("opentype"),
+      url('../assets/fonts/PaloSanto.ttf') format('truetype'),
+      url('../assets/fonts/palosanto-webfont.woff2') format('woff2'),
+      url('../assets/fonts/palosanto-webfont.woff') format('woff');
+}
+
+
 html {
   background: #FEC3D0;
   height: 100%;
