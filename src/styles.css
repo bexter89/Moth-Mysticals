@@ -16,6 +16,11 @@
       url('https://cdn.jsdelivr.net/gh/bexter89/Moth-Mysticals@main/assets/fonts/PaloSanto.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'revicons';
+  src: url('https://cdn.jsdelivr.net/gh/bexter89/Moth-Mysticals@main/assets/fonts/revicons.ttf') format('truetype');
+}
+
 html {
   background: #FEC3D0;
   height: 100%;
