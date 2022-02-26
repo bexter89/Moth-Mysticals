@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Displace';
-  src: local("Displace"), local("Serebryakov-Displace"),
-      url("./fonts/Serebryakov-Displace.otf") format("opentype"),
+  src: local('Displace'), local('Serebryakov-Displace'),
+      url('./fonts/Serebryakov-Displace.otf') format('opentype'),
+      url('./fonts/Serebryakov_-_Displace.ttf') format('truetype'),
       url('./fonts/Serebryakov-Displace.eot?#iefix') format('embedded-opentype'),
       url('./fonts/serebryakov_-_displace-webfont.woff2') format('woff2'),
       url('./fonts/serebryakov_-_displace-webfont.woff') format('woff');
@@ -11,8 +12,9 @@
 
 @font-face {
   font-family: 'PaloSanto';
-  src: local("PaloSanto"), local("Palo Santo"),
-      url("./fonts/PaloSanto.otf") format("opentype"),
+  src: local('PaloSanto'), local('Palo Santo'),
+      url('./fonts/PaloSanto.otf') format('opentype'),
+      url('./fonts/PaloSanto.ttf') format('truetype'),
       url('./fonts/PaloSanto.eot?#iefix') format('embedded-opentype'),
       url('./fonts/palosanto-webfont.woff2') format('woff2'),
       url('./fonts/palosanto-webfont.woff') format('woff');

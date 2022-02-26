@@ -10,10 +10,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { DisplayProvider } from './components/DisplayContext';
 import PaloSanto from './fonts/palosanto-webfont.woff'
 import './fonts/palosanto-webfont.woff2'
+import './fonts/PaloSanto.ttf'
 import './fonts/PaloSanto.eot'
 import './fonts/PaloSanto.otf'
 import Displace from './fonts/Serebryakov-Displace.eot'
 import './fonts/Serebryakov-Displace.otf'
+import './fonts/Serebryakov_-_Displace.ttf'
 import './fonts/serebryakov_-_displace-webfont.woff'
 import './fonts/serebryakov_-_displace-webfont.woff2'
 import './styles.css'
