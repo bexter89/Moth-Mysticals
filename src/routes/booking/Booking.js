@@ -11,14 +11,6 @@ import "./booking.css";
 function Booking() {
   return (
     <>
-      <Col lg={6} md={12}>
-        <Image
-          className="BookingImage"
-          fluid
-          src={wolf}
-          alt="An overhead view of Gabee's hands shuflfing through tarot cards with an arch of tarot cards spread out, framing the top of the shot."
-        />
-      </Col>
       <Col lg={6} md={12} className="align-self-start">
         <Jump>
           <h2>Booking</h2>
@@ -49,6 +41,14 @@ function Booking() {
         >
           Book a Session
         </Button>
+      </Col>
+      <Col lg={6} md={12}>
+        <Image
+          className="BookingImage"
+          fluid
+          src={wolf}
+          alt="An overhead view of Gabee's hands shuflfing through tarot cards with an arch of tarot cards spread out, framing the top of the shot."
+        />
       </Col>
     </>
   );

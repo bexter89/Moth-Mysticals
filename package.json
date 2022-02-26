@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "mode": "development",
   "description": "the homepage of moth mysticals",
+  "homepage": "https://www.mothmysticals.com/",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",

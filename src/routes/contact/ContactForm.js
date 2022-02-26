@@ -91,6 +91,12 @@ export default function ContactForm() {
     }
   }, [toSend.reply_to, toSend.message]);
 
+  useEffect(() => {
+    if (messageIsValid && emailIsValid) {
+      setValidated(true)
+    }
+  }, [messageIsValid, emailIsValid]);
+
 
   return formSent ? (
     <FormSentConfirmation messageCopy={messageCopy} />

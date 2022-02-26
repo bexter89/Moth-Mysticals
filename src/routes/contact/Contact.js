@@ -25,7 +25,7 @@ export default function Contact() {
           fluid
           className="ContactImage"
           src={yellowbgCards}
-          alt="An overhead view of Gabee's hands shuflfing through tarot cards with an arch of tarot cards spread out, framing the top of the shot."
+          alt="tarot cards with colorful illustrations spread over a yellow cloth."
         />
       </Col>
     </>
