@@ -95,7 +95,7 @@ export default function ContactForm() {
     if (messageIsValid && emailIsValid) {
       setValidated(true)
     }
-  }, [messageIsValid, emailIsValid]);
+  });
 
 
   return formSent ? (

@@ -3,7 +3,6 @@ import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import ContactForm from "./ContactForm";
-import Jump from "react-reveal/Jump";
 import "./Contact.css";
 import yellowbgCards from "../../../assets/imgs/yellowbgCardsVertical.jpg";
 

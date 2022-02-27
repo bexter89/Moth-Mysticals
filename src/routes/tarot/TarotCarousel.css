@@ -7,11 +7,13 @@
 }
 
 .react-multiple-carousel__arrow--left {
-  left: 1px;
+  left: 0;
+  background-color: #173940;
 }
 
 .react-multiple-carousel__arrow--right {
-  right: 1px;
+  right: 0;
+  background-color: #216472;;
 }
 
 

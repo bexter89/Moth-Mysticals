@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Jump from "react-reveal/Jump";
 import wolf from "../../../assets/imgs/MM_MOON_WEB.jpg";
 import "./booking.css";
 
@@ -12,9 +11,7 @@ function Booking() {
   return (
     <>
       <Col lg={6} md={12} className="align-self-start">
-        <Jump>
           <h2>Booking</h2>
-        </Jump>
         <p className="Tarot-Summary">
           I use tarot for self-reflection, evolution and empowerment. I, nor the
           cards, can or will predict your future. Instead, I will offer insight

@@ -2,28 +2,28 @@ import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
-import Slide from "react-reveal/Slide";
-import Carousel from "react-multi-carousel";
-import "../../../node_modules/react-multi-carousel/lib/styles.css";
-import "./TarotCarousel.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import './TarotCarousel.css';
 
 const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
   desktop: {
-    breakpoint: { max: 3000, min: 1025 },
-    items: 5,
-    paritialVisibilityGutter: 60,
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4
   },
   tablet: {
-    breakpoint: { max: 1024, min: 501 },
-    items: 3,
-    paritialVisibilityGutter: 50,
+    breakpoint: { max: 1024, min: 464 },
+    items: 3
   },
   mobile: {
-    breakpoint: { max: 500, min: 0 },
-    items: 1,
-    paritialVisibilityGutter: 30,
-  },
-};
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+}
 
 export default function TarotCarousel() {
   const tarotEthics = [
@@ -64,7 +64,6 @@ export default function TarotCarousel() {
         arrows
         centerMode={false}
         infinite={false}
-        autoPlay={false}
         itemClass="carousel-item-padding-1-px"
         containerClass="carousel-container"
         showDots={false}

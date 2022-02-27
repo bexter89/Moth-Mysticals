@@ -13,11 +13,6 @@ import Displace from "../public/fonts/Displace.ttf";
 import revicons from '../public/fonts/revicons.ttf'
 import "./styles.css";
 
-
-require('react-dom');
-window.React2 = require('react');
-console.log(window.React1 === window.React2);
-
 ReactDOM.render(
     <BrowserRouter>
       <NavBar />

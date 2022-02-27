@@ -32,7 +32,7 @@ html {
 body {
   margin-top: .75rem;
   background: #FEC3D0;
-  font-family: Displace, 'Josefin Sans', sans-serif;
+  font-family: Displace, sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -85,7 +85,7 @@ a.anchor {
 }
 
 h1, h2, h3, h4 {
-  font-family: PaloSanto, 'Alike Angular', Times, serif;
+  font-family: PaloSanto, Times, serif;
   text-transform: uppercase;
   color: #CC5559;
   text-shadow: 1px 1px 0px rgba(204,85,89,0.2)
