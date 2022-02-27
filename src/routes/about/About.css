@@ -14,11 +14,10 @@ a, i {
   text-transform: uppercase;
   margin-bottom: 1em;
 }
-
 .About .blurb {
   margin-bottom: 0;
   position: relative;
-  left: 15%;
+  left: 10%;
   top: 15%;
   width: 500px;
   color: black;
@@ -28,6 +27,7 @@ a, i {
   line-height: 1.25;
   box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.5);
 }
+
 @media (max-width: 1200px) {
   .About h2 {
     font-size: 2.75em;
