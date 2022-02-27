@@ -1,8 +1,4 @@
-.About {
-  padding-right: 10em;
-}
-
-.About .bioPic {
+.About .AboutPic {
   position: static;
   width: 620px;
   height: 600px;
@@ -33,100 +29,47 @@ a, i {
 }
 
 @media (max-width: 1200px) {
-  .About {
-    padding-right: 5em;
-  }
   .About h2 {
-    font-size: 1.5em;
+    font-size: 3em;
   }
-  .About .blurb {
-    position: static;
-  }
-}
-@media (max-width: 950px) {
-  .About h2 {
-    font-size: 2.75em;
-    text-align: center;
-  }
-  .About .blurb {
-    width: 100%;
-    position: static;
-    text-align:justify;
-    padding: 1em;
-    line-height: 1.5;
-    box-shadow: none;
-  }
-}
-
-@media (max-width: 679px) {
-  .About {
-    padding: 1em 0;
-    padding-right: .25em;
-  }
-  .About h2 {
-    font-size: 2em;
-    text-align: center;
-  }
-  .About .blurb {
-    width: 100%;
-    position: static;
-    text-align:justify;
-    padding: 1em;
-    line-height: 1.5;
-    box-shadow: none;
-  }
-}
-
-@media (max-width: 479px) {
-  .About .bioPic {
+  .About .AboutPic {
     position:static;
-    width: 450px;
-    height: 450px;
+    width: 75vw;
+    height: 40vh;
     object-fit: cover;
-  }
-
-  .About h2 {
-    font-size: 2em;
-    text-align: center;
+    object-position: 50% 50%;
   }
   .About .blurb {
-    width: 100%;
     position: static;
-    text-align:justify;
-    padding: 1em;
-    line-height: 1.5;
-    box-shadow: none;
-  }
-}
-@media (max-width: 395px) {
-  .About h2 {
-    font-size: 2.3em;
-  }
-  .About .bioPic {
-    position:static;
-    width: 390px;
-    height: 390px;
-    object-fit: cover;
-    object-position: 100% 10;
+    width: 75vw;
+    height: auto;
+    padding: 2.5em;
+    box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.5);
+    margin-bottom: 2em;
   }
 }
 
 @media (max-width: 300px) {
   .About {
-    padding: 1em 0;
+    padding: 2em 0;
     padding-right: .25em;
   }
-  .About .bioPic {
+  .About h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+  .About .AboutPic {
     position:static;
     width: 300px;
     height: 300px;
     object-fit: cover;
   }
   .About .blurb {
-    width: 100%;
+    width: 90%;
     position: static;
     text-align:justify;
-    padding: .5em;
+    padding: .55em;
     line-height: 1.5;
     box-shadow: none;
   }

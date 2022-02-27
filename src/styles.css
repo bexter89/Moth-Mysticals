@@ -44,7 +44,7 @@ body {
 .About {
   background-color: #F0C33B;
   min-height: 50vh;
-  padding: 10rem;
+  padding: 10rem 15%;
   margin: 0;
 }
 
@@ -128,14 +128,15 @@ strong {
     padding: 0;
   }
   .About {
-    padding: 12.5vh 0;
+    padding: 8vh 0;
+    margin: 0;
   }
   .Contact {
     padding: 0;
     margin: 2.28em 0;
   }
   .Tarot {
-    padding: 4vh 0;
+    padding: 4vh 1em;
   }
   .Booking {
     padding: 5.5vh 0;

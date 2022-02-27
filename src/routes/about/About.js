@@ -11,15 +11,11 @@ const About = () => {
 
   return (
     <>
-      <Col xs={12} md={6} className="justify-content-center">
-        <article className="blurb">
-          <h2>About Me</h2>
-            {aboutText}
-        </article>
-      </Col>
-      <Col xs={12} md={6}>
-        <Image fluid src={bioPic} alt="About Pic" className="bioPic" />
-      </Col>
+      <article className="blurb">
+        <h2>About Me</h2>
+          {aboutText}
+      </article>
+      <Image src={bioPic} alt="a photo of Gabriella sitting on teh floor in front of a black background, wearing a patterened, multi-colored dress, colorful pom headband, and colorful makeup with gems. She is leaning foward towards the camera, appearing to be laughing, while holding and spreading tarot cards in her hands." className="AboutPic" />
     </>
   )
 };
