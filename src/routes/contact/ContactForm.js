@@ -89,7 +89,7 @@ export default function ContactForm() {
     if (toSend.message > 1) {
       validateMessage(toSend.message);
     }
-  }, [toSend.reply_to, toSend.message]);
+  }, []);
 
   useEffect(() => {
     if (messageIsValid && emailIsValid) {

@@ -58,4 +58,9 @@ module.exports = {
       favicon: "./dist/favicons/favicon.ico",
     }),
   ],
+  resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react')
+    }
+  }
 }
