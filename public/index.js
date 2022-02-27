@@ -5,9 +5,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import App from "../src/App";
-import PaloSanto from "../public/fonts/PaloSanto.ttf";
-import Displace from "../public/fonts/Displace.ttf";
-import revicons from '../public/fonts/revicons.ttf'
-import "./styles.css";
+import PaloSanto from "./fonts/PaloSanto.ttf";
+import Displace from "./fonts/Displace.ttf";
+import revicons from './fonts/revicons.ttf'
+import "../src/styles.css";
 
 ReactDOM.render( <App />, document.getElementById("root"));
