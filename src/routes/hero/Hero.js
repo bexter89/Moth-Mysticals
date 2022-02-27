@@ -8,14 +8,14 @@ export default function Hero() {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    let isMounted = false;
+    let isMounted = true;
     if (isMounted) {
       window.addEventListener("scroll", parallaxShift);
     }
     return () => {
-      isMounted = true;
+      isMounted = false;
     };
-  }, []);
+  }, [window.pageYOffset]);
 
   function parallaxShift(e) {
     setOffset(window.pageYOffset);
