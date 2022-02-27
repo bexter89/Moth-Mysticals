@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 395px) {
+  .Tarot {
+    margin: 0;
+    padding: 1em 0;
+  }
   .Tarot h2 {
     font-size: 2.2em;
   }

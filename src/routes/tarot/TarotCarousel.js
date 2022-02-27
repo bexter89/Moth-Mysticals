@@ -72,6 +72,7 @@ export default function TarotCarousel() {
       <Carousel
         responsive={responsive}
         arrows
+        ssr={true}
         infinite={true}
         itemClass="carousel-item-padding-1-px"
         containerClass="carousel-container"

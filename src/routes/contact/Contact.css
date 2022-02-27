@@ -61,12 +61,26 @@
   }
 }
 
+@media (max-width: 400px) {
+  .ContactForm {
+    padding: 0 .25em;
+  }
+  .Contact h2 {
+    font-size: 2rem;
+  }
+  .ContactImage {
+    max-height: 350px;
+    padding: 0;
+  }
+}
+
+
 @media (max-width: 300px) {
   .ContactForm {
     padding: 0 .25em;
   }
   .Contact h2 {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
   .ContactImage {
     max-height: 350px;

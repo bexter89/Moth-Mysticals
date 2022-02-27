@@ -17,3 +17,8 @@
   }
 }
 
+@media (max-width: 395px) {
+  .Contact {
+    padding-bottom: 1em;
+  }
+}

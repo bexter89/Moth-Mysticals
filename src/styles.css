@@ -102,6 +102,10 @@ strong {
   .About {
     padding: 2rem;
   }
+  .Contact {
+    padding: 0;
+    margin: 3em 0;
+  }
 }
 @media (min-width: 576px) and (max-width: 900px) {
   .About {
