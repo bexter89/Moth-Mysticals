@@ -1,5 +1,6 @@
 .ContactForm {
-  padding: 0 4em;
+  padding: 0 2em;
+  margin-bottom: 0;
 }
 
 .ContactForm .LabelText {
@@ -8,17 +9,7 @@
 
 @media (max-width: 975px) {
   .ContactForm {
-    padding: 1em;
-  }
-}
-@media (max-width: 821px) {
-  .ContactForm {
     padding: 0 1em;
-  }
-}
-
-@media (max-width: 395px) {
-  .Contact {
-    padding-bottom: 1em;
+    margin-bottom: 1em;
   }
 }

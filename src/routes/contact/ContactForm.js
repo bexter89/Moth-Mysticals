@@ -109,7 +109,7 @@ export default function ContactForm() {
   return formSent ? (
     <FormSentConfirmation messageCopy={messageCopy} />
   ) : (
-    <Row className="ContactForm align-items-center justify-content-start">
+    <Row className="ContactForm align-items-center justify-content-center">
       <Form onSubmit={handleSubmit} noValidate validated={validated}>
         <Form.Floating className="mb-2">
           <Form.Control
@@ -179,12 +179,12 @@ export default function ContactForm() {
         </FloatingLabel>
         <div className="d-grid gap-2 mt-2 mb-2">
           {validated ?
-          (<Button variant="warning" size="lg" type="submit">
+          (<Button variant="warning" size="lg" type="submit" className="mb-1">
             Submit
           </Button>)
           :
           (
-          (<Button variant="warning" size="lg" type="submit" disabled>
+          (<Button variant="warning" size="lg" type="submit" className="mb-1" disabled>
             Submit
           </Button>)
           )}
