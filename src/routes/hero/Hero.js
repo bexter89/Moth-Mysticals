@@ -9,7 +9,7 @@ export default function Hero() {
 
   useEffect(() => {
     let isMounted = false;
-    if (!isMounted) {
+    if (isMounted) {
       window.addEventListener("scroll", parallaxShift);
     }
     return () => {
