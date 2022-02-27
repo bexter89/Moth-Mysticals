@@ -8,20 +8,16 @@ import 'react-multi-carousel/lib/styles.css';
 import './TarotCarousel.css';
 
 const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 4000, min: 1101 },
     items: 4
   },
   largeTablet: {
-    breakpoint: { max: 1024, min: 701 },
+    breakpoint: { max: 1100, min: 801 },
     items: 3
   },
   smallTablet: {
-    breakpoint: { max: 700, min: 464 },
+    breakpoint: { max: 800, min: 464 },
     items: 2
   },
   mobile: {

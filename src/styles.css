@@ -52,7 +52,6 @@ body {
 .Tarot {
   background-color: #84BF5E;
   padding: 3rem 5%;
-  padding-right: 8%;
   margin: 0;
 }
 
@@ -104,6 +103,9 @@ strong {
   .Booking {
     padding: 4rem 5%;
     margin: 0;
+  }
+  .Tarot {
+    padding: 3rem 5%;
   }
 }
 

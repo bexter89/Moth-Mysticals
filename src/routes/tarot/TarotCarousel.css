@@ -3,10 +3,10 @@
 }
 
 .tarot-ethics-item {
-  height: 20rem;
-  width: auto;
-  margin: 1em;
-  padding: 2em 2em;
+  height: auto;
+  min-height: 22rem;
+  width: 90%;
+  padding: 2em 2.5em;
   background-color: #90D0DA;
 }
 
@@ -22,7 +22,6 @@
 
 
 @media (max-width: 575px) {
-
   .react-multiple-carousel__arrow--left {
     left: calc(2% + 1px);
     font-size: .5em;
@@ -32,13 +31,6 @@
     right: calc(2% + 1px);
     font-size: .5em;
     background-color: #216472;
-  }
-  .tarot-ethics-item {
-    height: 20rem;
-    width: 90%;
-    margin: 0;
-    padding: 2em 2.5em;
-    background-color: #90D0DA;
   }
 }
 
@@ -57,16 +49,6 @@
     width: 250px;
     height: auto;
   }
-
-  .tarot-ethics-item {
-    height: 20rem;
-    width: 90%;
-    font-size: 1em;
-    margin: 0;
-    padding: 2em;
-    background-color: #90D0DA;
-  }
-
   .react-multiple-carousel__arrow--left {
     left: calc(2% + 1px);
     font-size: .5em;
