@@ -66,6 +66,14 @@ export default function ContactForm() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
+    //listen for name input changes
+    useEffect(() => {
+      if (toSend.from_name.length >= 1) {
+        setNameIsValid(true)
+      } else {
+        setNameIsValid(false)
+      }
+    }, [toSend.from_name]);
 
   function validateEmail(inputText) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -74,28 +82,28 @@ export default function ContactForm() {
     }
   }
 
-  function validateMessage(inputText) {
-    if (inputText.length < 10) {
-      setMessageIsValid(false)
-    } else {
+    //listen for email changes
+    useEffect(() => {
+      if (toSend.reply_to) {
+        validateEmail(toSend.reply_to);
+      }
+    }, [toSend.reply_to]);
+
+  //listen for message input changes
+  useEffect(() => {
+    if (toSend.message.length > 10) {
       setMessageIsValid(true)
+    } else {
+      setMessageIsValid(false)
     }
-  }
+  }, [toSend.message]);
 
+  //validate all
   useEffect(() => {
-    if (toSend.reply_to) {
-      validateEmail(toSend.reply_to);
-    }
-    if (toSend.message > 1) {
-      validateMessage(toSend.message);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (messageIsValid && emailIsValid) {
+    if (messageIsValid && emailIsValid && nameIsValid) {
       setValidated(true)
     }
-  });
+  },[messageIsValid, emailIsValid, nameIsValid]);
 
 
   return formSent ? (
@@ -120,7 +128,6 @@ export default function ContactForm() {
           className="mb-3"
           name="pronouns"
           onChange={handleChange}
-          required
         >
           <option>Pronouns</option>
           <option value="she-her">She/Her</option>
