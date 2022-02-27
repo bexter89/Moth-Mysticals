@@ -11,7 +11,7 @@ function Booking() {
   return (
     <>
       <Col lg={6} md={12} className="align-self-start">
-          <h2>Booking</h2>
+        <h2>Booking</h2>
         <p className="Tarot-Summary">
           I use tarot for self-reflection, evolution and empowerment. I, nor the
           cards, can or will predict your future. Instead, I will offer insight
@@ -29,6 +29,14 @@ function Booking() {
           in the here and now.
         </p>
         <br/>
+        <h3>Cancellation Policy</h3>
+        <p className="Tarot-Summary">
+        <strong>Please cancel 24hrs before our scheduled meeting time.</strong> If less than
+          24hrs notice is given, you will be invoiced 50% of your session’s
+          rate. “No shows” for appointments will be charged in full; no
+          exceptions. <strong>No refunds.</strong>
+        </p>
+        <br />
         <Button
           href="https://booking.setmore.com/scheduleappointment/dbee31de-b157-4b73-a457-c8095eb3a818"
           target="_blank"

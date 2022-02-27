@@ -44,7 +44,7 @@
 
 @media (max-width: 375px) {
   #mainNavbar .navbar-brand {
-    font-size: 1em;
+    font-size: .75em;
   }
 }
 

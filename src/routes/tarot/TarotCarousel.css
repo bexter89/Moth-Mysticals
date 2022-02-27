@@ -1,19 +1,23 @@
+.carousel-container {
+  padding-bottom: 5px;
+}
+
 .tarot-ethics-item {
   height: 20rem;
   width: auto;
   margin: 1em;
-  padding: 2em 1em;
+  padding: 2em 2em;
   background-color: #90D0DA;
 }
 
 .react-multiple-carousel__arrow--left {
-  left: 0;
-  background-color: #173940;
+  left: .5px;
+  background-color: #216472;
 }
 
 .react-multiple-carousel__arrow--right {
-  right: 0;
-  background-color: #216472;;
+  right: .5px;
+  background-color: #216472;
 }
 
 
@@ -22,8 +26,36 @@
     height: 15rem;
     width: auto;
     margin: 0;
-    padding: 3em 2.5em;
+    padding: 2em 2.5em;
     padding-right: 4em;
     background-color: #90D0DA;
+  }
+}
+
+@media (max-width: 375px) {
+  .carousel-container {
+    width: 250px;
+    height: auto;
+  }
+
+  .tarot-ethics-item {
+    height: 20rem;
+    width: 90%;
+    font-size: 1em;
+    margin: 0;
+    padding: 2em;
+    background-color: #90D0DA;
+  }
+
+  .react-multiple-carousel__arrow--left {
+    left: calc(2% + 1px);
+    font-size: .5em;
+    background-color: #216472;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: calc(2% + 1px);
+    font-size: .5em;
+    background-color: #216472;
   }
 }

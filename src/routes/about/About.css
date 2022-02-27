@@ -9,7 +9,9 @@
   object-fit: cover;
   object-position: 100% 15;
 }
-
+a, i {
+  color: #84BF5E;
+}
 .About h2 {
   color: #DC5C62;
   font-size: 3em;
@@ -43,6 +45,10 @@
 }
 
 @media (max-width: 479px) {
+  .About {
+    padding-right: .25em;
+  }
+
   .About .bioPic {
     position:static;
     width: 300px;
@@ -55,9 +61,32 @@
   .About .blurb {
     width: 100%;
     position: static;
-    padding: 1em 2em;
-    font-weight: 100;
-    line-height: 1.25;
-    box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.5);
+    text-align:justify;
+    padding: 1em;
+    line-height: 1.5;
+    box-shadow: none;
+  }
+}
+@media (max-width: 300px) {
+  .About {
+    padding: 1em 0;
+    padding-right: .25em;
+  }
+  .About .bioPic {
+    position:static;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .About h2 {
+    font-size: 2em;
+  }
+  .About .blurb {
+    width: 100%;
+    position: static;
+    text-align:justify;
+    padding: .5em;
+    line-height: 1.5;
+    box-shadow: none;
   }
 }

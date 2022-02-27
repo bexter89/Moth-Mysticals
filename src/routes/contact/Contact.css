@@ -38,7 +38,25 @@
   }
   .ContactImage {
     max-height: 350px;
+    margin: 0;
     margin-bottom: 1em;
+    padding: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .Contact {
+    margin: 0;
+    padding: 0;
+  }
+  .ContactForm {
+    padding: 0 .25em;
+  }
+  .Contact h2 {
+    font-size: 1.75rem;
+  }
+  .ContactImage {
+    max-height: 350px;
     padding: 0;
   }
 }

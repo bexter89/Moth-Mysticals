@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
+import moth_logo from '../../../assets/imgs/moth_logo.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './TarotCarousel.css';
@@ -27,6 +28,11 @@ const responsive = {
 
 export default function TarotCarousel() {
   const tarotEthics = [
+    {
+      num: "",
+      img: moth_logo,
+      text: "Please read all seven ethical practices before booking a service.",
+    },
     {
       num: "I.",
       text: "Tarot and I will meet you right where you are without judgment. Please be prepared to do the same for yourself.",
@@ -62,16 +68,20 @@ export default function TarotCarousel() {
       <Carousel
         responsive={responsive}
         arrows
-        centerMode={false}
-        infinite={false}
+        infinite={true}
         itemClass="carousel-item-padding-1-px"
         containerClass="carousel-container"
         showDots={false}
+        slidesToSlide={1}
       >
         {tarotEthics.map((item) => (
           <div key={item.num} className="tarot-ethics-item">
             <h3>{item.num}</h3>
+            <br/>
             <p>{item.text}</p>
+            { item.img ?
+            <img src={item.img} alt="moth mysticals moth logo" style={{width: '100px', height: 'auto'}}/>
+            : null}
           </div>
         ))}
       </Carousel>

@@ -9,15 +9,15 @@ import yellowbgCards from "../../../assets/imgs/yellowbgCardsVertical.jpg";
 export default function Contact() {
   return (
     <>
-      <Col sm={12} md={6} className="ContactForm order-1 order-md-2">
-        <Row className="align-items-start">
+      <Col sm={12} md={6} className="Contact order-1 order-md-2">
+        <Row className="Contact align-items-start">
           <h2>Get In Touch</h2>
         </Row>
-        <Row className="align-items-center justify-content-center">
+        <Row className="ContactForm align-items-center justify-content-center">
           <ContactForm />
         </Row>
       </Col>
-      <Col sm={12} md={6}>
+      <Col className="Contact" sm={12} md={6}>
         <Image
           fluid
           className="ContactImage"
