@@ -9,7 +9,13 @@ export default function Hero() {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("scroll", parallaxShift);
+    let isMounted = false;
+    if (!isMounted) {
+      window.addEventListener("scroll", parallaxShift);
+    }
+    return () => {
+      isMounted = true;
+    };
   }, []);
 
   function parallaxShift(e) {
