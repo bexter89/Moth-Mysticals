@@ -5,12 +5,16 @@
 }
 
 .Booking .BookingImage {
-  max-height: 600px;
+  max-height: 65vh;
 }
 
 .Booking h2 {
   font-size: 3em;
   color: #216472;
+}
+
+.Booking h3 {
+  padding-top: 1em;
 }
 
 .Booking p {
@@ -24,14 +28,6 @@
   .Booking h2 {
     font-size: 2.5em;
   }
-  .Booking .Tarot-Summary {
-    text-align: center;
-  }
-
-  .Booking .BookingImage {
-    margin-top: 2em;
-    max-height: 40vh;
-  }
 }
 
 @media (max-width: 850px) {
@@ -42,10 +38,8 @@
     text-align: center;
     font-size: 1em;
   }
-
   .Booking .BookingImage {
-    margin-top: 2em;
-    max-height: 40vh;
+    padding-top: 2em;
   }
 }
 

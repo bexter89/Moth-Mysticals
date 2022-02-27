@@ -10,7 +10,7 @@ import "./booking.css";
 function Booking() {
   return (
     <>
-      <Col lg={6} md={12} className="align-self-start">
+      <Col sm={12} md={6}className="align-self-start">
         <h2>Booking</h2>
         <p className="Tarot-Summary">
           I use tarot for self-reflection, evolution and empowerment. I, nor the
@@ -28,7 +28,6 @@ function Booking() {
           My hope is that you leave your session feeling empowered and spacious
           in the here and now.
         </p>
-        <br/>
         <h3>Cancellation Policy</h3>
         <p className="Tarot-Summary">
         <strong>Please cancel 24hrs before our scheduled meeting time.</strong> If less than
@@ -47,12 +46,12 @@ function Booking() {
           Book a Session
         </Button>
       </Col>
-      <Col lg={6} md={12}>
+      <Col xs={12} md={6}>
         <Image
           className="BookingImage"
           fluid
           src={wolf}
-          alt="An overhead view of Gabee's hands shuflfing through tarot cards with an arch of tarot cards spread out, framing the top of the shot."
+          alt="an illustrated drawing of a wolf with eyes all over its body, standing on a pink and red checkered floor. Behind the wolf you can see an arched window surrounded by vines and white flowers. There is a full moon and stars visible thorugh the window."
         />
       </Col>
     </>

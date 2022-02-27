@@ -58,7 +58,7 @@ body {
 
 .Booking {
   background-color: #FEC3D0;
-  padding: 4rem 5%;
+  padding: 4rem 10%;
   margin: 0;
 }
 
@@ -100,6 +100,13 @@ strong {
 /**
 *  Responsive Styles
 */
+@media (max-width: 1700px) {
+  .Booking {
+    padding: 4rem 5%;
+    margin: 0;
+  }
+}
+
 
 @media (min-width: 901px) and (max-width: 1350px) {
   .About {
@@ -119,7 +126,7 @@ strong {
     padding: 2.5% 2em;
   }
   .Booking {
-    padding: 3rem 10%;
+    padding: 3rem 0;
   }
 }
 
