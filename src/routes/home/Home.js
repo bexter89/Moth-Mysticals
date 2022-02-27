@@ -36,7 +36,7 @@ const Home = () => {
       <a className="anchor" name="booking" ></a>
         <Booking/>
       </Row>
-      <Row className="Contact align-items-center justify-content-center">
+      <Row className="Contact align-items-start justify-content-center">
       <a className="anchor" name="contact" ></a>
         <Contact/>
       </Row>

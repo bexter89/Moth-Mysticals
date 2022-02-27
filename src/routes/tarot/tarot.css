@@ -19,16 +19,37 @@
 }
 
 @media (max-width: 750px) {
+  .Tarot {
+    margin: 0;
+    padding: 1em 1.5em;
+  }
+  .Tarot h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 415px) {
+  .Tarot {
+    margin: 0;
+    padding: 1em;
+  }
+  .Tarot h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 395px) {
+  .Tarot h2 {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 365px) {
   .Tarot h2 {
     font-size: 2em;
   }
 }
 
 @media (max-width: 300px) {
-  .Tarot {
-    margin: 0;
-    padding: 1em 0;
-  }
   .Tarot h2 {
     font-size: 1.8em;
   }

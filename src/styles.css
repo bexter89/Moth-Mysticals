@@ -98,6 +98,11 @@ strong {
 /**
 *  Responsive Styles
 */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .About {
+    padding: 2rem;
+  }
+}
 @media (min-width: 576px) and (max-width: 900px) {
   .About {
     padding: 3rem 2rem;
